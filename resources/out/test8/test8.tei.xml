@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">CR-FIQA: Face Image Quality Assessment by Learning Sample Relative Classifiability</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2021-12-13">13 Dec 2021</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,130.61,116.30,57.86,9.50"><forename type="first">Fadi</forename><surname>Boutros</surname></persName>
+							<email>fadi.boutros@igd.fraunhofer.de</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Fraunhofer Institute for Computer Graphics Research IGD</orgName>
+								<address>
+									<settlement>Darmstadt</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Computer Science</orgName>
+								<orgName type="institution">TU Darmstadt</orgName>
+								<address>
+									<settlement>Darmstadt</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,206.37,116.30,60.30,9.50"><forename type="first">Meiling</forename><surname>Fang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Fraunhofer Institute for Computer Graphics Research IGD</orgName>
+								<address>
+									<settlement>Darmstadt</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Computer Science</orgName>
+								<orgName type="institution">TU Darmstadt</orgName>
+								<address>
+									<settlement>Darmstadt</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,282.81,116.30,60.18,9.50"><forename type="first">Marcel</forename><surname>Klemt</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Fraunhofer Institute for Computer Graphics Research IGD</orgName>
+								<address>
+									<settlement>Darmstadt</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,354.30,116.30,45.25,9.50"><forename type="first">Biying</forename><surname>Fu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Fraunhofer Institute for Computer Graphics Research IGD</orgName>
+								<address>
+									<settlement>Darmstadt</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,410.86,116.30,59.21,9.50"><forename type="first">Naser</forename><surname>Damer</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Fraunhofer Institute for Computer Graphics Research IGD</orgName>
+								<address>
+									<settlement>Darmstadt</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Computer Science</orgName>
+								<orgName type="institution">TU Darmstadt</orgName>
+								<address>
+									<settlement>Darmstadt</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">CR-FIQA: Face Image Quality Assessment by Learning Sample Relative Classifiability</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2021-12-13">13 Dec 2021</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">42AC0BF0F32B72AE24491B6075796FD5</idno>
+					<idno type="arXiv">arXiv:2112.06592v1[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.0" ident="GROBID" when="2022-04-10T05:40+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The quality of face images significantly influences the performance of underlying face recognition algorithms. Face image quality assessment (FIQA) estimates the utility of the captured image in achieving reliable and accurate recognition performance. In this work, we propose a novel learning paradigm that learns internal network observations during the training process. Based on that, our proposed CR-FIQA uses this paradigm to estimate the face image quality of a sample by predicting its relative classifiability. This classifiability is measured based on the allocation of the training sample feature representation in angular space with respect to its class center and the nearest negative class center. We experimentally illustrate the correlation between the face image quality and the sample relative classifiability. As such property is only observable for the training dataset, we propose to learn this property from the training dataset and utilize it to predict the quality measure on unseen samples. This training is performed simultaneously while optimizing the class centers by an angular margin penalty-based softmax loss used for face recognition model training. Through extensive evaluation experiments on eight benchmarks and four face recognition models, we demonstrate the superiority of our proposed CR-FIQA over state-of-the-art (SOTA) FIQA algorithms. 1</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="27" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="28" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="1,135.62,442.64,77.75,8.64">I. INTRODUCTION</head><p>Face image utility indicates the value of an image to face recognition (FR) algorithm <ref type="bibr" coords="1,162.63,470.44,15.27,8.64" target="#b20">[21]</ref>, <ref type="bibr" coords="1,185.28,470.44,10.58,8.64" target="#b1">[2]</ref>. This utility is measured with a scalar, namely the face image quality (FIQ) score, following the definition in ISO/IEC 2382-37 <ref type="bibr" coords="1,246.06,494.35,16.60,8.64" target="#b21">[22]</ref> and the ongoing FR Vendor Test (FRVT) for FIQA <ref type="bibr" coords="1,229.61,506.31,15.27,8.64" target="#b11">[12]</ref>.</p><p>Although some general image quality assessment (IQA) methods <ref type="bibr" coords="1,86.44,530.34,15.27,8.64" target="#b31">[32]</ref>, <ref type="bibr" coords="1,109.25,530.34,15.27,8.64" target="#b32">[33]</ref>, <ref type="bibr" coords="1,132.05,530.34,16.60,8.64" target="#b27">[28]</ref> have been found to act, to a certain degree, as an FIQ (utility) <ref type="bibr" coords="1,163.41,542.30,15.27,8.64" target="#b38">[39]</ref>, <ref type="bibr" coords="1,186.78,542.30,15.27,8.64" target="#b9">[10]</ref>, recent FIQA methods <ref type="bibr" coords="1,48.96,554.25,15.27,8.64" target="#b30">[31]</ref>, <ref type="bibr" coords="1,70.41,554.25,15.27,8.64" target="#b34">[35]</ref>, <ref type="bibr" coords="1,91.86,554.25,16.60,8.64" target="#b38">[39]</ref> have largely, as expected, outperformed general measures that do not address the utility concept <ref type="bibr" coords="1,252.28,566.21,15.27,8.64" target="#b20">[21]</ref>. SOTA FIQA methods focused either on creating concepts to label the training data with FIQ scores and then learn a regression problem <ref type="bibr" coords="1,87.21,602.08,15.27,8.64" target="#b34">[35]</ref>, <ref type="bibr" coords="1,111.33,602.08,15.27,8.64" target="#b16">[17]</ref>, <ref type="bibr" coords="1,135.46,602.08,15.27,8.64" target="#b15">[16]</ref>, or on developing a link between face embedding properties under certain scenarios and the FIQ <ref type="bibr" coords="1,69.50,625.99,15.27,8.64" target="#b38">[39]</ref>, <ref type="bibr" coords="1,93.07,625.99,15.27,8.64" target="#b30">[31]</ref>, <ref type="bibr" coords="1,116.64,625.99,15.27,8.64" target="#b37">[38]</ref>. Generally, the second approach led to better FIQA performances with most works mentioning the error-prone labeling of the ground truth quality in the first research direction as a possible reason <ref type="bibr" coords="1,207.07,661.85,15.27,8.64" target="#b38">[39]</ref>, <ref type="bibr" coords="1,229.19,661.85,15.27,8.64" target="#b30">[31]</ref>. However, in the second category, transferring the information in network embeddings into an FIQ score is not a learnable process, but rather a form of statistical analysis, which might not be optimal.</p><p>This paper proposes a novel learning paradigm to assess FIQ, namely the CR-FIQA. Our concept is based on learning to predict the classifiability of FR training samples by probing internal network observations that point to the relative proximity of these samples to their class centers and negative class centers. This regression is learned simultaneously with a conventional FR training process that minimizes the distance between the training samples and their class centers. Linking the properties that cause high/low classifiability of a training sample to the properties leading to high/low FIQ, we can use our CR-FIQA to predict the FIQ of any given sample. We empirically prove the theorized link between classifiability and FIQ and conduct thorough ablation studies on key aspects of our CR-FIQA design. The proposed CR-FIQA is evaluated on eight benchmarks along with SOTA FIQAs. The reported results on four FR models demonstrate the superiority of our proposed CR-FIQA over SOTA methods and the stability of its performance across different FR models. An overview of the proposed CR-FIQA is presented in Figure <ref type="figure" coords="1,506.87,416.61,4.98,8.64">1</ref> and will be clarified in detail in this paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="1,395.50,458.26,84.03,8.64">II. RELATED WORK</head><p>The recent SOTA FIQA approaches can be roughly grouped into two main categories. The first are approaches that learn a straight forward regressions problem to assess a FIQ score <ref type="bibr" coords="1,311.98,512.25,10.58,8.64" target="#b1">[2]</ref>, <ref type="bibr" coords="1,329.00,512.25,15.27,8.64" target="#b16">[17]</ref>, <ref type="bibr" coords="1,351.01,512.25,15.27,8.64" target="#b15">[16]</ref>, <ref type="bibr" coords="1,373.03,512.25,15.27,8.64" target="#b34">[35]</ref>, <ref type="bibr" coords="1,395.04,512.25,15.27,8.64" target="#b42">[43]</ref>. The second category uses properties of the FR model responses to face samples to estimate the sample quality without explicitly learning a typical supervised regression that requires quality labels <ref type="bibr" coords="1,469.94,548.12,15.27,8.64" target="#b38">[39]</ref>, <ref type="bibr" coords="1,492.86,548.12,15.27,8.64" target="#b30">[31]</ref>, <ref type="bibr" coords="1,515.79,548.12,15.27,8.64" target="#b37">[38]</ref>. In the first category, the innovation focused on creating the FIQ labels for training. These quality labels included human-labeled quality labels <ref type="bibr" coords="1,370.25,583.98,10.58,8.64" target="#b1">[2]</ref>, the FR genuine comparison score between a sample and an ICAO <ref type="bibr" coords="1,410.12,595.94,16.60,8.64" target="#b19">[20]</ref> compliant sample <ref type="bibr" coords="1,505.52,595.94,15.27,8.64" target="#b16">[17]</ref>, <ref type="bibr" coords="1,528.20,595.94,15.27,8.64" target="#b15">[16]</ref>, the FR comparison score involving the labeled sample (assumed to have the lower quality in the comparison pair) <ref type="bibr" coords="1,511.63,619.85,15.27,8.64" target="#b42">[43]</ref>, and the Wasserstein distance between a randomly selected genuine and imposter FR comparisons with the labeled sample <ref type="bibr" coords="1,517.17,643.76,15.27,8.64" target="#b34">[35]</ref>. These solutions generally trained a regression network to predict the quality label, using both, trained-from-scratch networks in some cases <ref type="bibr" coords="1,361.58,679.62,15.27,8.64" target="#b42">[43]</ref>, and pre-trained FR networks in other cases <ref type="bibr" coords="1,311.98,691.58,15.27,8.64" target="#b34">[35]</ref>, <ref type="bibr" coords="1,335.31,691.58,15.27,8.64" target="#b16">[17]</ref>, <ref type="bibr" coords="1,358.64,691.58,15.27,8.64" target="#b15">[16]</ref>. A slightly different approach, however also based on learning from labels, focuses on learning to predict the sample quality as a rank <ref type="bibr" coords="1,432.96,715.49,16.60,8.64" target="#b23">[24]</ref> based on FR performancebased training rank labels of a set of databases <ref type="bibr" coords="1,519.08,727.44,10.58,8.64" target="#b4">[5]</ref>. In the second category, the innovation was rather focused on linking Fig. <ref type="figure" coords="2,69.09,253.66,3.88,8.64">1</ref>: An overview of our CR-FIQA training paradigm. We propose to simultaneously learn to optimize the class center (L Arc ), while learning to predict an internal network observation i.e. the allocation of the feature representation of sample x in feature space, with respect to its class center w 1 and nearest negative class center w 2 (L CR ). The figure in the red rectangle illustrates the angle between two samples x 1 and x 2 (belong to identity 1) and their class center w 1 . The plot on the right of the figure shows the distribution of the cosine similarity between training samples and their class centers (CCS) and nearest negative class centers (NNCCS) obtained from ResNet-50 trained on CASIA-WebFace <ref type="bibr" coords="2,441.97,313.44,15.27,8.64" target="#b43">[44]</ref>. The example images on the top-right of this plot are of high CCS values and the ones on the top-left are of low CCS values (notice the correspondence to perceived quality). These sample images are selected from CASIA-WebFace <ref type="bibr" coords="2,377.13,337.35,15.27,8.64" target="#b43">[44]</ref>.</p><p>face embedding properties under certain scenarios to the FIQ, without the explicit need for quality-labeled data. In <ref type="bibr" coords="2,265.44,383.38,15.27,8.64" target="#b38">[39]</ref>, the assessed sample is passed through an FR network multiple times, each with a different random dropout pattern. The robustness of the resulting embeddings, represented by the sigmoid of the negative mean of the Euclidean distances between the embeddings, is considered the FIQ score. In <ref type="bibr" coords="2,280.93,443.15,15.27,8.64" target="#b30">[31]</ref>, the FIQ score is calculated as the magnitude of the sample embedding. This is based on training the FR model using a loss that adapts the penalty margin loss based on this magnitude, and thus links the closeness of a sample to its class center to the unnormalized embedding magnitude. While in <ref type="bibr" coords="2,280.93,502.93,15.27,8.64" target="#b37">[38]</ref>, the solution produces both, an FR embedding and a gaussian variance (uncertainty) vector, from a face sample. The inverse of harmonic mean of the uncertainty vector is considered as the FIQ score. Our CR-FIQA learns a regression problem to estimate the FIQ score, however, unlike previous works, without relying on preset labels, but rather learn a dynamic internal network observations (during training) that point out sample classifiability.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="2,141.54,626.72,65.91,8.64">III. APPROACH</head><p>This section presents our proposed Certainty Ratio Face Image Quality Assessment (CR-FIQA) approach, which inspects internal network observations to learn to predict the sample relative classifiability. This classifiability prediction is then used to estimate the FIQ. An overview of the proposed CR-FIQA approach is presented in Figure <ref type="figure" coords="2,209.87,703.53,3.74,8.64">1</ref>. During the training phase of an FR model, the model can conveniently push the high-quality samples close to their class center and relatively far from other class centers. Conversely, the FR is not able to push, to the same degree, low-quality samples to their class center, and thus they will remain relatively farther from their class center than the high-quality ones. Based on this assumption, we theorize our approach by stating that the properties that cause a face sample to lay relatively closer to its class center during training are the ones that make it a high-quality sample, and vice versa. Therefore, learning to predict such properties in any given sample would lead to learning to assess this sample quality. To learn to perform such assessment, our training paradigm targets learning internal network observations that evolve during the FR training phase, where these observations act as a training objective. The predictions of such training paradigm can be simply stated as answering a question: if a given sample was hypothetically part of the FR model training (which it is not), how relatively close would it be to its class center? Answering this question would give us an indication of this sample quality as will be shown in detail in this paper.</p><p>In the rest of this section, We formalize and empirically rationalize our proposed CR-FIQA approach and its components. To do that, we start by shortly revisiting angular margin penalty-based softmax loss utilized to optimize the class centers of the FR model. Then present a detailed description of our proposed CR-FIQA concept and the associated training paradigm.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="2,319.45,687.60,203.30,8.59">A. Revisiting Margin Penalty-based Softmax Loss</head><p>Angular margin penalty-based softmax is a widely used loss function for training FR models <ref type="bibr" coords="2,444.51,715.49,10.58,8.64" target="#b5">[6]</ref>, <ref type="bibr" coords="2,461.78,715.49,15.27,8.64" target="#b18">[19]</ref>, <ref type="bibr" coords="2,484.01,715.49,15.27,8.64" target="#b30">[31]</ref>, <ref type="bibr" coords="2,506.25,715.49,10.58,8.64" target="#b3">[4]</ref>. It extends over softmax loss by deploying angular penalty margin on the angle between the deep features and their corresponding weights. Margin penalty-based softmax loss aims to push the decision boundary of softmax, and thus enhance intra-class compactness and inter-class discrepancy. From this family of loss functions, this work utilizes ArcFace loss <ref type="bibr" coords="3,239.32,93.82,11.62,8.64" target="#b5">[6]</ref> to optimize the distance between the training samples and their class center. Our choice of ArcFace loss is based on the SOTA performance achieved by ResNet-100 network trained with ArcFace on mainstream benchmarks <ref type="bibr" coords="3,205.11,141.64,10.58,8.64" target="#b5">[6]</ref>. Formally, ArcFace loss is defined as follows:</p><formula xml:id="formula_0" coords="3,48.96,168.20,202.73,24.95">L Arc = 1 N i∈N −log e s(cos(θ y i +m))</formula><p>e s(cos(θ y i +m)) + C j=1,j =y i e s(cos(θ j ))</p><p>,</p><p>(1) where N is the batch size, C is the number of classes (identities), y i is the class label of sample i (in range [1, C]), θ yi is the angle between the features x i and the y i -th class center w yi . x i ∈ R d is the deep feature embedding of the last fully connected layer of size d. w yi is the y i -th column of weights W ∈ R d C of the classification layer. θ yi is defined as x i w T yi = x i w yi cos(θ yi ) <ref type="bibr" coords="3,166.52,286.47,15.27,8.64" target="#b25">[26]</ref>. The weights and the feature norms are fixed to w yi = 1 and x i = 1, respectively, using l 2 normalization as defined in <ref type="bibr" coords="3,201.67,310.38,15.27,8.64" target="#b25">[26]</ref>, <ref type="bibr" coords="3,224.58,310.38,15.27,8.64" target="#b40">[41]</ref>. The decision boundary, in this case, depends on the angle cosine between x i and w yi . m &gt; 0 is an additive angular margin proposed by ArcFace <ref type="bibr" coords="3,101.80,346.25,11.62,8.64" target="#b5">[6]</ref> to enhance the intra-class compactness and inter-class discrepancy. Lastly, s is the scaling parameter <ref type="bibr" coords="3,280.93,358.20,15.27,8.64" target="#b40">[41]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="3,56.44,387.30,76.27,8.59">B. Certainty Ratio</head><p>In this section, we formulate and empirically rationalize the main concepts that build our FIQA solution. We derive our Certainty Ratio (CR) to estimate the sample relative classifiability. Additionally, we experimentally illustrate the strong relationship between our CR measure and FIQ.</p><p>Certainty Ratio During the FR model training phase, the model is trained to enhance the separability between the classes (identities) by pushing each sample x i to be close to its class center w yi and far from the other (negative) class centers w j , j = y i . Based on this, we first define the Class Center Angular Similarity (CCS) as the proximity between x i and its class center w yi , as follows:</p><formula xml:id="formula_1" coords="3,134.53,554.16,165.49,9.65">CCS xi = cos(θ yi ),<label>(2)</label></formula><p>where θ yi is the angle between x i and its class center w yi , where the weights of the last fully connected layer of the FR model trained with softmax loss are considered as the centers for each class <ref type="bibr" coords="3,142.40,609.88,15.27,8.64" target="#b26">[27]</ref>, <ref type="bibr" coords="3,165.49,609.88,10.58,8.64" target="#b5">[6]</ref>. Then, we define the Closest Nearest Negative Class Center Angular Similarity (NNCCS) as proximity between x i and the nearest negative class center w j , j = y i . Formally, NNCCS is defined as follows:</p><formula xml:id="formula_2" coords="3,106.73,663.66,193.29,18.90">N N CCS xi = C max j=1,j =yi (cos(θ j )),<label>(3)</label></formula><p>where θ j is the angle between x i and w j . As we theorize, when the FR model converges, the high-quality samples are pushed closer to their class centers (high CCS) and far from neighbouring negative class centers (low NNCCS). However, low-quality samples can not be pushed as close to their class centers. A sample able to achieve high CCS with respect to NNCCS is a sample easily correctly classified during training, and thus is relatively highly classifiable. We thus measure this relative classifiability by the ratio of CCS to NNCS, which we note as the Certainty Ratio (CR), as follows:</p><formula xml:id="formula_3" coords="3,371.87,121.68,191.16,23.22">CR xi = CCS xi N N CCS xi + (1 + ) ,<label>(4)</label></formula><p>where the 1 + term is added to insure a positive above zero denominator, i.e. shift the NNCCS value range from [−1, +1] to [ , 2 + ]. This ensures that the CR of a sample with a lower NNCCS is relatively higher than a sample with a higher NNCCS, given the same CCS. The is set to 1e − 9 in our experiments. The optimal CR is obtained when the CCS is approaching the maximum cosine similarity value (+1) and the NNCCS is approaching the minimum cosine similarity value (-1), i.e. the training sample is capable of being pushed to its class center, and far away from the closest negative class center, and thus it is highly classifiable. Relation between the CR and FIQ Here, we empirically prove the theorized relationship between the CR and FIQ (defined earlier as image utility). Namely, we want to answer: if the CR values achieved by training samples of an FR model were used as FIQ, would they behave as expected from an optimal FIQ? If yes, then the face image properties leading to high/low CR do also theoretically lead to high/low FIQ.</p><p>To answer this question we conducted an experiment on a ResNet-50 <ref type="bibr" coords="3,358.97,548.11,16.60,8.64" target="#b14">[15]</ref> FR model trained on CASIA-WebFace <ref type="bibr" coords="3,546.44,548.11,16.60,8.64" target="#b43">[44]</ref> with ArcFace loss <ref type="bibr" coords="3,392.10,560.07,11.62,8.64" target="#b5">[6]</ref> (noted as R50(CASIA)). Specifically, we calculate the CR, CCS, and NNCCS values from the trained model for all samples in the training dataset (0.5M images of 10K identities). An insight on the resulting CCS and NNCCS values (CR being a derivative measure) is given as value distributions in Figure <ref type="figure" coords="3,438.64,619.85,3.74,8.64">1</ref>, showing that these measures vary between different samples. Furthermore, based on the calculated scores, we plot Error vs. Reject Curves (ERC) (described in Section IV) to demonstrate the relationship between the CR, as an FIQ measure, and FR performance. To calculate the FR performance in the ERC curve, we extract the feature embedding of CASIA-WebFace <ref type="bibr" coords="3,476.77,691.58,16.60,8.64" target="#b43">[44]</ref> using a ResNet-100 model <ref type="bibr" coords="3,358.77,703.53,16.60,8.64" target="#b14">[15]</ref> trained on MS1M-V2 <ref type="bibr" coords="3,470.61,703.53,15.27,8.64" target="#b13">[14]</ref>, <ref type="bibr" coords="3,493.17,703.53,11.62,8.64" target="#b5">[6]</ref> with ArcFace (noted as R100(MS1M-V2)). We utilize a different model (trained on a different database) to extract the embedding (R100(MS1M-V2)) than the one used to calculate CR, CCS,  Fig. <ref type="figure" coords="4,68.24,174.67,3.88,8.64">3</ref>: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-3). CR-FIQA(S) and CCS-FIQA(S) outperformed the on-top solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples).</p><p>and NNCCS (R50(CASIA)) to provide fair evaluation where the FR performance is evaluated on unseen data. Then, we perform n : n comparisons between all samples of CASIA-WebFace using feature embedding obtained from the R100(MS1M-V2). Figure <ref type="figure" coords="4,90.82,304.26,4.98,8.64" target="#fig_0">2</ref> presents the ERC of CR, CCS, and NNCCS experimentally used as FIQ. An FIQ measure would cause the ERC to drop as rapidly as possible when rejecting a larger fraction of low-quality samples (moving to the right).</p><p>It can be clearly noticed in Figure <ref type="figure" coords="4,203.51,351.97,4.98,8.64" target="#fig_0">2</ref> that the CCS and CR do behave as we would expect from a good performing FIQ, as the verification error value drops rapidly when rejecting low quality (low CCS and CR) samples. It can be also observed that the CR does that more steadily when compared to CCS. This points out that adding the scaling term NNCCS in CR calculation can enhance the representation of the CCS as an FIQ measure, which will be clearer later when we experimentally evaluate our CR-FIQA approach in Section V. As expected, the NNCCS measure by itself does not act as an FIQ measure would, demonstrated by the flat ERC in Figure <ref type="figure" coords="4,292.55,471.52,3.74,8.64" target="#fig_0">2</ref>, as it only considers the distance to the nearest negative class. This empirical evaluation does provide a confirming answer to the previously stated question by affirming that the CR does act as expected from an FIQ measure and thus, theoretically, one can strongly link the image properties that cause high/low CR in the FR training data to these causing high/low FIQ.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="4,56.44,568.83,170.73,8.59">C. Quality Estimation Training Paradigm</head><p>In the previous section, we proved that the CR does behave as an FIQ would, and thus, it can also relate to image properties that dictate FIQ. However, the CR measure is only observable for samples in the FR training dataset, where the class centers are known. In a real case scenario, the FIQ measure should be assessed to any single image, i.e. unseen evaluation data. Considering this, and in an effort to predict what the CR value would be for a given sample if hypothetically it was part of the FR training, we propose to simultaneously learn to predict the CR from the training dataset while optimizing the class centers (typical FR training) during the training phase, i.e. the CR-FIQA model. To enable this, we add a single regression layer to the FR model. The input of the regression layer is a feature embedding x i and the output is an estimation of the CR. The output of this regression layer is used later to predict the FIQ score of the unseen sample, e.g. from the evaluation dataset. Thus, we capture the properties that make the CR high/low to predict the FIQ of any given sample. Towards this goal, during the training phase, the model (in Figure <ref type="figure" coords="4,433.47,304.38,4.15,8.64">1</ref>) has two learning objectives: a) It is trained to optimize the distance between the samples and the class centers using ArcFace loss defined in Equation 1. b) It is trained to predict the internal network observation, CR, using Smooth L1-Loss <ref type="bibr" coords="4,424.41,352.20,16.60,8.64" target="#b10">[11]</ref> applied between the output of the regression layer (P) and the CR calculated as in Equation <ref type="formula" coords="4,311.98,376.11,3.74,8.64">5</ref>. Smooth L1-loss can be interpreted as a combination of L1 and L2-losses by defining a threshold β that changes between them <ref type="bibr" coords="4,336.33,400.02,15.27,8.64" target="#b10">[11]</ref>. The loss leading to the second objective is then given as:</p><formula xml:id="formula_4" coords="4,311.98,427.17,253.84,29.38">L CR = 1 N i∈N 0.5(CRx i −Pi) 2 β if |CR xi − P i | &lt; β |CR xi − P i | − 0.5 × β otherwise .</formula><p>(5) The final loss combining both objectives for training our CR-FIQA model is defined as follows:</p><formula xml:id="formula_5" coords="4,390.74,500.57,172.30,9.65">L = L Arc + λ × L CR ,<label>(6)</label></formula><p>where λ is a hyper-parameter used to control the balance between the two losses. At the beginning of model training, the value range of L CR is very small (≤ 2) in comparison to L Arc (∼ 45). Setting λ to a small value, the model will only focus on L Arc . Besides, setting λ to a large value, i.e. &gt; 10, we observed that the model did not converge. Therefore, we set λ to 10 in all the experiments in this paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="4,379.71,616.71,115.60,8.64;4,321.94,631.41,104.41,8.96">IV. EXPERIMENTAL SETUP Implementation Details</head><p>We demonstrate our proposed CR-FIQA under two protocols (small and large) based on the training dataset and the training model architecture. We utilize widely used architectures in the SOTA FR solutions, ResNet100 and ResNet50 <ref type="bibr" coords="4,419.92,679.62,15.27,8.64" target="#b14">[15]</ref>, both modified as described in Section III-C. For the small protocol, we utilize ResNet50 and the CASIA-WebFace <ref type="bibr" coords="4,423.44,703.53,16.60,8.64" target="#b43">[44]</ref> training data (noted as CR-FIQA(S)) and for the large protocol, we utilize ResNet100 and the MS1MV2 <ref type="bibr" coords="4,371.57,727.44,15.27,8.64" target="#b13">[14]</ref>, <ref type="bibr" coords="4,394.17,727.44,11.62,8.64" target="#b5">[6]</ref> training data (noted as CR-FIQA(L)). The MS1MV2 is a refined version of the MS-Celeb-1M <ref type="bibr" coords="5,48.96,57.95,16.60,8.64" target="#b13">[14]</ref> by <ref type="bibr" coords="5,84.71,57.95,11.62,8.64" target="#b5">[6]</ref> containing 5.8M images of 85K identities. The CASIA-WebFace contains 0.5m images of 10K identities <ref type="bibr" coords="5,280.93,69.91,15.27,8.64" target="#b43">[44]</ref>. We follow the ArcFace training setting <ref type="bibr" coords="5,218.94,81.86,11.62,8.64" target="#b5">[6]</ref> to set the scale parameter s to 64 and the margin m to 0.5. We set the minibatch size to 512 and train our model on one Linux machine (Ubuntu 20.04.2 LTS) with Intel(R) Xeon(R) Gold 5218 CPU 2.30GHz, 512G RAM, and four Nvidia GeForce RTX-6000 GPUs. The proposed models in this paper are implemented using Pytorch <ref type="bibr" coords="5,111.39,153.59,15.27,8.64" target="#b35">[36]</ref>. All models are trained with Stochastic Gradient Descent (SGD) optimizer with an initial learning rate of 1e-1. During the training, we use random horizontal flipping with a probability of 0.5 for data augmentation. We set the momentum to 0.9 and the weight decay to 5e-4. For CR-FIQA(S), the learning rate is divided by 10 at 20K and at 28K training iterations, following <ref type="bibr" coords="5,167.59,225.33,10.58,8.64" target="#b5">[6]</ref>. The training is stopped after 32K iterations. For CR-FIQA(L), the learning rate is divided by 10 at 100K and 160K training iterations, following <ref type="bibr" coords="5,285.91,249.24,10.58,8.64" target="#b5">[6]</ref>.</p><p>The training is stopped after 180K iterations. All the images in evaluation and training datasets are aligned and cropped to 112 × 112, as described in <ref type="bibr" coords="5,166.88,285.10,10.58,8.64" target="#b5">[6]</ref>. All the training and testing images are normalized to have pixel values between -1 and 1. Both models are trained using the loss defined in Equation <ref type="formula" coords="5,292.55,309.01,3.74,8.64" target="#formula_5">6</ref>.</p><p>Evaluation Benchmarks We reported the achieved results on eight different benchmarks: Labeled Faces in the Wild (LFW) <ref type="bibr" coords="5,81.95,344.88,15.27,8.64" target="#b17">[18]</ref>, AgeDB-30 <ref type="bibr" coords="5,155.38,344.88,15.27,8.64" target="#b33">[34]</ref>, Celebrities in Frontal-Profile in the Wild (CFP-FP) <ref type="bibr" coords="5,143.32,356.83,15.27,8.64" target="#b36">[37]</ref>, Cross-age LFW (CALFW) <ref type="bibr" coords="5,280.93,356.83,15.27,8.64" target="#b45">[46]</ref>, Adience <ref type="bibr" coords="5,86.00,368.79,10.58,8.64" target="#b7">[8]</ref>, Cross-Pose LFW (CPLFW) <ref type="bibr" coords="5,221.19,368.79,15.27,8.64" target="#b44">[45]</ref>, Cross-Quality LFW (XQLFW) <ref type="bibr" coords="5,121.98,380.74,15.27,8.64" target="#b24">[25]</ref>, IARPA Janus Benchmark-C (IJB-C) <ref type="bibr" coords="5,48.96,392.70,15.27,8.64" target="#b28">[29]</ref>. These benchmarks are chosen to provide a wide comparison to SOTA FIQA algorithms and give an insight into the CR-FIQA generalizability.</p><p>Evaluation Metric We evaluate the FIQA by plotting ERCs <ref type="bibr" coords="5,76.26,440.52,15.27,8.64" target="#b12">[13]</ref>. The ERC is a widely used representation of the FIQA performance <ref type="bibr" coords="5,130.53,452.47,15.27,8.64" target="#b12">[13]</ref>, <ref type="bibr" coords="5,153.61,452.47,16.60,8.64" target="#b11">[12]</ref> by demonstrating the effect of rejecting a fraction face images, of the lowest quality, on face verification performance in terms of False None Match Rate <ref type="bibr" coords="5,48.96,488.34,16.60,8.64" target="#b22">[23]</ref> (FNMR) at a specific threshold calculated at fixed False Match Rate <ref type="bibr" coords="5,99.37,500.29,16.60,8.64" target="#b22">[23]</ref> (FMR). The ERC curves for all benchmarks are plotted at two fixed FMRs, 1e-3 (as recommended for border control operations by Frontex <ref type="bibr" coords="5,203.02,524.20,11.20,8.64" target="#b8">[9]</ref>) and 1e-4 (the latter is provided in the supplementary material). We also report the Area under the Curve (AUC) of the ERC, to provide a quantitative aggregate measure of verification performance across all rejection ratios.</p><p>Additionally, motivated by evaluating the FIQ as a weighting term for face embedding <ref type="bibr" coords="5,170.42,595.94,15.27,8.64" target="#b34">[35]</ref>, <ref type="bibr" coords="5,193.11,595.94,15.27,8.64" target="#b37">[38]</ref>, we follow the IJB-C 1:1 mixed verification benchmark <ref type="bibr" coords="5,185.14,607.89,16.60,8.64" target="#b28">[29]</ref> by weighting the frames such that all frames belonging to the same subject within a video have a combined weight equal to a single still image as described in IJB-C benchmarks <ref type="bibr" coords="5,179.80,643.76,15.27,8.64" target="#b28">[29]</ref>. We do that by using the CR-FIQA quality scores as well as all SOTA methods. We report the verification performance of IJB-C benchmarks as true acceptance rates (TAR) at false acceptance rates (FAR) of 1e-4, 1e-5, and 1e-6, as defined in <ref type="bibr" coords="5,205.51,691.58,15.27,8.64" target="#b28">[29]</ref>.</p><p>Face Recognition Models We utilize four different SOTA FR models to report the verification performance at different quality rejection rate to inspect the generalizability of FIQA over FR solutions. The FR models are ArcFace <ref type="bibr" coords="5,237.82,739.40,10.58,8.64" target="#b5">[6]</ref>, ElasticFace (ElasticFace-Arc) <ref type="bibr" coords="5,385.51,57.95,10.58,8.64" target="#b3">[4]</ref>, MagFace <ref type="bibr" coords="5,442.27,57.95,15.27,8.64" target="#b30">[31]</ref>, and CurricularFace <ref type="bibr" coords="5,543.95,57.95,15.27,8.64" target="#b18">[19]</ref>. All models process 112 × 112 aligned and cropped image to produce 512-D feature embedding. We used the officially released pretrained ResNet-100 models trained on MS1MV2 released by the four FR solutions.</p><p>Baseline We compare our CR-FIQA approach with nine quality assessment methods. Three are general IQA methods as a simple baseline i.e. BRISQUE <ref type="bibr" coords="5,460.70,142.08,15.27,8.64" target="#b31">[32]</ref>, RankIQA <ref type="bibr" coords="5,525.89,142.08,15.27,8.64" target="#b27">[28]</ref>, and DeepIQA <ref type="bibr" coords="5,353.90,154.04,10.58,8.64" target="#b2">[3]</ref>, and six are SOTA face-specific FIQA methods, namely RankIQ <ref type="bibr" coords="5,380.80,165.99,10.58,8.64" target="#b4">[5]</ref>, PFE <ref type="bibr" coords="5,420.01,165.99,15.27,8.64" target="#b37">[38]</ref>, SER-FIQ <ref type="bibr" coords="5,484.69,165.99,15.27,8.64" target="#b38">[39]</ref>, FaceQnet (v1 <ref type="bibr" coords="5,311.98,177.95,15.93,8.64" target="#b15">[16]</ref>) <ref type="bibr" coords="5,336.20,177.95,15.27,8.64" target="#b16">[17]</ref>, <ref type="bibr" coords="5,359.59,177.95,15.27,8.64" target="#b15">[16]</ref>, MagFace <ref type="bibr" coords="5,424.21,177.95,15.27,8.64" target="#b30">[31]</ref>, and SDD-FIQA <ref type="bibr" coords="5,517.08,177.95,15.27,8.64" target="#b34">[35]</ref>, all as officially released in the respective works.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="5,388.05,219.08,98.91,8.64">V. ABLATION STUDIES</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="5,321.94,236.45,241.09,8.96">Does CR-FIQA benefit from the NNCCS scaling term?</head><p>To answer this, we conducted additional experiments using ResNet-50 model trained on CASIA-WebFace <ref type="bibr" coords="5,505.34,260.75,16.60,8.64" target="#b43">[44]</ref> using the experimental setup described in Section IV. This model is noted as CCS-FIAQ(S). The only difference from CR-FIAQ(S) is that the CCS-FIAQ(S) is trained to learn CCS (instead of CR) by replacing the CR xi in Equation <ref type="formula" coords="5,480.43,308.57,4.98,8.64">5</ref>with CCS xi , thus neglecting the NNCCS scaling term in the equation. Figure <ref type="figure" coords="5,311.98,332.48,4.98,8.64">3</ref> presents the ERCs along with AUC using CR-FIAQ(S) and CCS-FIAQ(S) on Adience, AgeDb-30, CALLFW and CRF-FP. The verification error, FNMR at FMR1e-3, is calculated using ArcFace FR model (described in Section IV). The ERCs and AUC values show that the reduction in the error is more evident for CR-FIAQ(S) than CCS-FIQA(S). Thus, adding the scaling term NNCCS in CR enhanced the performance of the FIQA.</p><p>Dose the simultaneous learning in CR-FIQA lead to better performance in comparison to on-the-top learning? We consider the possibility of learning to estimate CR after finalizing the FR training, in comparison to the simultaneously learning in CR-FIQA. We conducted two additional experiments using pretrained ResNet-50 trained with ArcFace loss <ref type="bibr" coords="5,332.57,500.29,11.62,8.64" target="#b5">[6]</ref> on CASIA-WebFace <ref type="bibr" coords="5,439.30,500.29,15.27,8.64" target="#b43">[44]</ref>. Specifically, we add an additional single regression layer to this pretrained model. We freeze the weights of the pretrained model and train only the regression layer to learn the internal network observation of the pretrained model using only the L CR (Equation <ref type="formula" coords="5,525.18,548.12,3.60,8.64">5</ref>). Using this setting, we present two instances, CR-FIQA(S) (On top) and CCS-FIQA(S) (On top), that learned to predict CR and CCS, respectively. Each of CR-FIQA(S) (On top) and CCS-FIQA(S) (On top) is fine-tuned for 32K iteration with an initial learning rate of 0.01. The learning rate is divided by 10 at 20K and 28K training iterations, similarly to CR-FIAQ(S) and CCS-FIAQ(S). The results (ERCs and AUCs) of these models are compared to CR-FIQA(S) and CCS-FIQA(S) in Figure <ref type="figure" coords="5,341.87,655.71,3.74,8.64">3</ref>. The ERCs in Figure <ref type="figure" coords="5,441.23,655.71,4.98,8.64">3</ref> presented the evaluation on Adience, AgeDb-30, CALFW and CFP-FP using the ArcFace FR model. The ERCs and AUCs in Figure <ref type="figure" coords="5,493.22,679.62,4.98,8.64">3</ref> show that both CR-FIQA(S) and CCS-FIQA(S) lead to stronger reductions in the error than the CR-FIQA(S) (On top) and the CCS-FIQA(S) (On top), when rejecting low-quality samples. This supports our training paradigm that simultaneously learns the internal network observation, CR, while optimizing the class centers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="6,55.68,57.06,7.47,5.29;6,94.34,57.06,18.99,5.29">FR Method</head><p>Adience <ref type="bibr" coords="6,163.74,53.62,8.24,5.29" target="#b7">[8]</ref> AgeDB-30 <ref type="bibr" coords="6,221.50,53.62,12.32,5.29" target="#b33">[34]</ref> CFP-FP <ref type="bibr" coords="6,266.79,53.62,11.94,5.29" target="#b36">[37]</ref> LFW <ref type="bibr" coords="6,310.65,53.62,13.18,5.29" target="#b17">[18]</ref> CALFW <ref type="bibr" coords="6,370.40,53.62,14.02,5.29" target="#b45">[46]</ref> CPLFW <ref type="bibr" coords="6,421.73,53.62,13.57,5.29" target="#b44">[45]</ref> XQLFW <ref type="bibr" coords="6,474.82,53.62,14.17,5.29" target="#b24">[25]</ref> IJB  Quality Estimation 1:1 mixed Verification: TAR (%) at ArcFace <ref type="bibr" coords="6,197.31,466.07,7.84,4.99" target="#b5">[6]</ref> ElasticFace <ref type="bibr" coords="6,301.61,466.07,6.71,4.99" target="#b3">[4]</ref> MagFace <ref type="bibr" coords="6,396.25,466.07,9.59,4.99" target="#b30">[31]</ref> CurricularFace <ref type="bibr" coords="6,500.25,466.07,9.78,4.99" target="#b18">[19]</ref> FAR=1e-6 FAR=1e-5 FAR=1e-4 FAR=1e-6 FAR=1e-5 FAR=1e-4 FAR=1e-6 FAR=1e-5 FAR=1e-4 FAR=1e-6 FAR=1e-  This can be related to the step-wise convergence towards the final CR value in the simultaneously training. For both ablation study questions, ERCs and AUC for all the remaining benchmarks and FR models (mentioned in Section IV) lead to similar conclusions and are provided in the supplementary material.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="6,109.66,699.24,129.67,8.64">VI. RESULT AND DISCUSSION</head><p>The verification performances as ERC curves (Figure <ref type="figure" coords="6,291.72,715.49,4.15,8.64" target="#fig_2">4</ref>) are reported at FMR1e-3. The ERC curves at FMR1e-4 are provided in the supplementary material. The verification performances as AUC at FMR1e-3 and FMR1e-4 are presented in Table <ref type="table" coords="6,348.59,624.38,2.90,8.64" target="#tab_2">I</ref>.</p><p>The ERC curves (Figure <ref type="figure" coords="6,432.12,643.76,4.15,8.64" target="#fig_2">4</ref>) and the AUC values (Table <ref type="table" coords="6,311.98,655.71,3.32,8.64" target="#tab_2">I</ref>) show that our proposed CR-FIQA(S) and CR-FIQA(L) outperformed the SOTA methods by significant margins in almost all settings. Observing the results on IJB-C, Adience, CFP-FP, CALFW, and CPLFW at FMR1e-3 and FMR1e-4 (Figure <ref type="figure" coords="6,344.75,703.53,4.98,8.64" target="#fig_2">4</ref> and Table <ref type="table" coords="6,396.30,703.53,3.04,8.64" target="#tab_2">I</ref>), our proposed CR-FIQA outperformed all SOTA methods on all the considered FR models. On the AgeDB-30 benchmark, our proposed CR-FIQA ranked first in five out of eight settings and second in the other three settings (Table <ref type="table" coords="7,110.78,677.88,3.04,8.64" target="#tab_2">I</ref>). On the LFW benchmark, our proposed CR-FIQA ranked behind the MagFace and the RankIQ. This is the only case that our models did not outperform all SOTA methods. However, it can be noticed from the ERC curves in Figure <ref type="figure" coords="7,77.99,725.70,4.98,8.64" target="#fig_2">4</ref> that none of the SOTA methods were able to achieve stable behavior (smoothly decaying curve) on LFW. The main reason for such unstable ERC behavior on LFW is that the FR performance on LFW is nearly saturated (all models achieved above 99.80% accuracy <ref type="bibr" coords="7,411.60,701.79,15.27,8.64" target="#b30">[31]</ref>, <ref type="bibr" coords="7,434.09,701.79,10.58,8.64" target="#b5">[6]</ref>, <ref type="bibr" coords="7,451.58,701.79,10.58,8.64" target="#b3">[4]</ref>, <ref type="bibr" coords="7,469.09,701.79,14.94,8.64" target="#b18">[19]</ref>), leaving very few samples causing errors and thus lowering the significance of the measured FNMR.</p><p>The XQLFW benchmark is derived from LFW to contain pairs with a maximum difference in quality. The XQLFW images are chosen based on BRISQUE <ref type="bibr" coords="8,215.29,69.91,21.50,8.64" target="#b31">[32]</ref> and SER-FIQ <ref type="bibr" coords="8,48.96,81.86,16.60,8.64" target="#b24">[25]</ref> quality scores to be either extremely high or low. The use of SER-FIQ <ref type="bibr" coords="8,122.52,93.82,16.60,8.64" target="#b38">[39]</ref> in this selection might give a biased edge for SER-FIQ on this benchmark. On XQLFW, our CR-FIQA achieved very close performance to the selection method (SER-FIQ) and is far ahead of all other SOTA methods. Lastly, our proposed CR-FIQA(S) achieved very comparable performance to our CR-FIQA(L), pointing out the robustness of our approach, regardless of the training database and architecture complexity.</p><p>Table <ref type="table" coords="8,84.93,189.62,6.64,8.64" target="#tab_4">II</ref> presents the verification performance on the IJB-C 1:1 mixed verification benchmark <ref type="bibr" coords="8,199.26,201.58,16.60,8.64" target="#b28">[29]</ref> using quality scores as an embedding weighting term (as defined in <ref type="bibr" coords="8,253.02,213.53,15.93,8.64" target="#b28">[29]</ref>) under different experimental settings. For each of the FR models, we report in the first row the evaluation result of the corresponding FR model as defined in the protocol <ref type="bibr" coords="8,263.71,249.40,16.60,8.64" target="#b28">[29]</ref> and the corresponding released evaluation scripts <ref type="bibr" coords="8,242.74,261.35,10.58,8.64" target="#b5">[6]</ref>, <ref type="bibr" coords="8,261.83,261.35,10.58,8.64" target="#b3">[4]</ref>, <ref type="bibr" coords="8,280.93,261.35,15.27,8.64" target="#b30">[31]</ref>, <ref type="bibr" coords="8,48.96,273.31,15.27,8.64" target="#b18">[19]</ref>, i.e. without considering the FIQ. Our proposed CR-FIQA significantly leads to higher verification performance than all evaluated SOTA methods, when the quality score is used as an embedding weighting term (Table <ref type="table" coords="8,203.03,309.17,6.22,8.64" target="#tab_4">II</ref>). This achievement is observable under all experimental settings (Table <ref type="table" coords="8,251.66,321.13,6.22,8.64" target="#tab_4">II</ref>). Another outcome of this evaluation is that the integration of CR-FIQA leads to SOTA verification performance on one of the most challenging FR benchmarks, IJB-C <ref type="bibr" coords="8,196.01,356.99,15.27,8.64" target="#b28">[29]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="8,134.29,383.77,80.42,8.64">VII. CONCLUSION</head><p>In this work, we propose the CR-FIQA approach that probes the relative classifiability of training samples of the FR model and utilize this observation to learn to predict the utility of any given sample in achieving an accurate FR performance. We experimentally prove the theorized relationship between the sample relative classifiability and FIQ and build on that towards our CR-FIQA. The CR-FIQA training paradigm simultaneously learns to optimize the class center while learning to predict sample relative classifiability. The presented ablation studies and the extensive experimental results prove the effectiveness of the proposed CR-FIQA approach, and its design choices, as an FIQ method. The reported results demonstrated that our proposed CR-FIQA outperformed SOTA methods repeatedly across multiple FR models and on multiple benchmarks, including ones with a large age gap (AgeDb-30, Adience, CALFW), large quality difference (XQLFW), large pose variation (CPLFW, CFP-FP), and extremely large-scale and challenging FR benchmarks (IJB-C).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="10,99.73,57.95,149.55,8.64">VIII. SUPPLEMENTARY MATERIAL</head><p>This supplementary material complements the main submission by providing: 1) Complementary ERC curves with AUC values for all the FR models and benchmarks to complement and support the ablation study section (Section5) of the main manuscript. 2) Samples images from the 8 benchmarks with quality scores achieved by our CR-FIQA and SOTA methods. 3) Quality score distribution of the evaluation benchmarks achieved by our CR-FIQA and SOTA methods. 4) ERC (FNMR at FMR1e-4 vs reject) curves that provide a complement to the AUC reported in Table <ref type="table" coords="10,265.68,213.86,4.98,8.64">1</ref> of the main manuscript. 5) More details on the databases and benchmarks. 6) Discussion of the potential social impacts. 7) Details on further existing assets used in the work. 8) A discussion on the technical limitations of the presented work.  11 and 12 present a comparison between ERCs (FNMR at FMR1e-4) of CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top), and CCS-FIQA(S) (On top) on the evaluation benchmarks. These ERC curves are complementary to the ablation study presented in main manuscript (Section 5). In the main submission, these ERC curves are presented for ArcFace <ref type="bibr" coords="10,224.15,446.74,11.62,8.64" target="#b5">[6]</ref> FR model on Adience <ref type="bibr" coords="10,85.67,458.69,10.58,8.64" target="#b7">[8]</ref>, AgeDb-30 <ref type="bibr" coords="10,148.84,458.69,15.27,8.64" target="#b33">[34]</ref>, CALFW <ref type="bibr" coords="10,209.80,458.69,16.60,8.64" target="#b45">[46]</ref> and CFP-FP <ref type="bibr" coords="10,283.42,458.69,16.60,8.64" target="#b36">[37]</ref> in Figure <ref type="figure" coords="10,94.29,470.65,4.98,8.64">3</ref> (main submission) and discussed on ablation study section (Section 5 of main submission). However, in this supplementary material we opt to provide the evaluation mentioned in Lines 583-597 on all considered FR models and evaluation benchmarks to stress the conclusion of our ablation study (Section 5 of main submission). This again points out the benefits of CR of CCS (thus the NNCCS term in equation 4 of the main submission), as well as the simultaneously training rather than on the top learning.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="10,56.44,320.72,184.14,8.59">A. Complementary Result for Ablation Study</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="10,56.44,601.42,142.40,8.59">B. Histogram of CCS and NNCCS</head><p>Figure <ref type="figure" coords="10,87.40,619.85,9.96,8.64">13</ref> shows an insight into the CCS and NNCCS values distribution of the training datasets (CASIA-WebFace <ref type="bibr" coords="10,266.45,631.80,16.60,8.64" target="#b43">[44]</ref> and MS1MV2 <ref type="bibr" coords="10,92.18,643.76,10.45,8.64" target="#b5">[6]</ref>). Figure <ref type="figure" coords="10,141.24,643.76,14.39,8.64">13a</ref> shows an enhanced visualisation of the same plot shown in Figure <ref type="figure" coords="10,177.25,655.71,4.98,8.64">1</ref> (main submission) based on the R50(CASIA) model and discussed in lines 338-342 of the main submission. Figure <ref type="figure" coords="10,152.19,679.62,14.94,8.64">13b</ref> shows CCS and NNCCS values distribution of MS1MV2 dataset obtained from ResNet-100 (R100(MS1M-V2)) model to provide an additional illustration of the CCS and NNCCS value distribution on another training setup (model and dataset). On both models one can notice that the CCS and NNCCS values vary between samples.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="10,319.45,57.77,118.50,8.59">C. Quality score distribution</head><p>Figure <ref type="figure" coords="10,353.62,73.06,9.96,8.64">15</ref> presents the quality score distribution of the evaluation benchmarks achieved by our CR-FIQA and the SOTA methods, all normalized to have a range between 0 and 1. One can notice in the distributions, that for the XQLFW dataset where the data contains extreme low and extreme low quality samples by design, this two groups of quality is only visible in our CR-FIQA, PFE, MagFace, SDD-FIQA, as well as the methods that were used to label the qualities when constructing the XQLFW, i.e. SER-FIQA and BRISQUE.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="10,319.45,196.20,155.89,8.59">D. Sample images with quality scores</head><p>Figure <ref type="figure" coords="10,352.39,211.48,9.96,8.64" target="#fig_2">14</ref> shows sample images of the evaluation benchmarks with quality score values obtained from our CR-FIQA the SOTA methods. These images in Figure <ref type="figure" coords="10,512.29,235.39,9.96,8.64" target="#fig_2">14</ref> illustrate samples of different benchmarks with quality score values. It is important to mention that, although the quality scores are normalized between 0 and 1, the higher quality score values across FIQA methods do not mean that the method points out a relative higher quality estimation than the other methods. For example, SER-FIQ method resulted always in relatively high quality score value when it is compared to other SOTA methods. However, as show in Figure <ref type="figure" coords="10,476.15,331.04,8.30,8.64">15</ref>, the quality score value range of SER-FIQ is higher when compared to other SOTA methods.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="10,319.45,382.44,243.58,8.59;10,311.98,394.40,26.00,8.59">E. FIQA performance as ERC (FNMR at FMR1e-4 vs reject) curves</head><p>Figure <ref type="figure" coords="10,350.97,409.68,8.30,8.64">16</ref>, 17, 18 and 19 present ERC (FNMR at FMR1e-4 vs reject) curves for all the evaluation settings. These ERC curves illustrates the curves producing the AUC (FNMR at FMR1e-4) presented in Table <ref type="table" coords="10,434.54,445.55,4.98,8.64">1</ref> of the main submission. Such ERC curves are shown in Figure <ref type="figure" coords="10,455.58,457.50,4.98,8.64" target="#fig_2">4</ref> in the main submission on FNMR at FMR1e-3 and discussed in details in Section 6. However, we present also in this supplementary material the ERC curves on another FNMR, FNMR at FMR1e-4. These ERC curves also correspond to the AUC values presented in Table <ref type="table" coords="10,337.35,517.28,4.98,8.64">1</ref> of the main submission.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="10,319.45,544.78,47.08,8.59">F. Datasets</head><p>This section presents the description and license information of the used datasets in our work.</p><p>Adience <ref type="bibr" coords="10,361.52,583.59,11.20,8.96" target="#b7">[8]</ref>: Adience was used to estimate the age and gender from face images acquired in challenging and in the wild conditions. Adience dataset contains 26,580 images across 2,284 identities, where the images were captured as close to the real-world condition as possible, under all variations in appearance, pose, illuminations, and image quality. Adience license is limited to research purposes only. Detailed information on database creation and licensing can be found in <ref type="bibr" coords="10,324.59,679.62,11.62,8.64" target="#b7">[8]</ref> and https://talhassner.github.io/home/projects/Adience/ Adience-main.html.</p><p>AgeDB-30 <ref type="bibr" coords="10,369.70,703.14,15.93,8.96" target="#b33">[34]</ref>: AgeDB is an in-the-wild dataset for ageinvariant face verification evaluation, containing 16,488 images of 568 identities. Every image is annotated with respect to the identity, age, and gender attribute. In our case, we report the performance for AgeDB-30 (30 years age gap) as it is the most reported and challenging subset of AgeDB. More details on the collection process can be found in <ref type="bibr" coords="11,250.26,81.86,16.60,8.64" target="#b33">[34]</ref> and the details on the license are presented in https://ibug.doc.ic.ac.uk/ resources/agedb/.</p><p>LFW <ref type="bibr" coords="11,85.18,117.34,15.49,8.96" target="#b17">[18]</ref>: Labeled Faces in the Wild (LFW) is an unconstrained face verification dataset. The LFW contains 13,233 images of 5749 identities collected from the web. The LFW is licensed under CC-BY-4.0, and more information on database creation can be found in <ref type="bibr" coords="11,158.78,165.55,16.60,8.64" target="#b17">[18]</ref> and http://vis-www.cs.umass. edu/lfw/.</p><p>CFP-FP <ref type="bibr" coords="11,99.57,189.07,15.93,8.96" target="#b36">[37]</ref>: Celebrities in Frontal-Profile in the Wild (CFP-FP) <ref type="bibr" coords="11,94.05,201.41,16.60,8.64" target="#b36">[37]</ref> dataset addresses the comparison between frontal and profile faces. CFP-FP dataset contains 7,000 images across 500 identities, where 10 frontal and 4 profile image per identity. More information can be found in <ref type="bibr" coords="11,283.42,237.28,16.60,8.64" target="#b36">[37]</ref> and http://www.cfpw.io/.</p><p>CALFW <ref type="bibr" coords="11,99.30,260.80,15.93,8.96" target="#b45">[46]</ref>: The Cross-age LFW (CALFW) dataset <ref type="bibr" coords="11,283.43,261.19,16.60,8.64" target="#b45">[46]</ref> is based on LFW with a focus on comparison pairs with the age gap, however not as large as AgeDB-30. Age gap distribution of the CALFW is provided in <ref type="bibr" coords="11,232.33,297.06,15.27,8.64" target="#b45">[46]</ref>. It contains 3000 genuine comparisons, and the negative pairs are selected of the same gender and race to reduce the effect of attributes. The detailed information on database creation can be found in <ref type="bibr" coords="11,48.96,344.88,16.60,8.64" target="#b45">[46]</ref> and http://whdeng.cn/CALFW/.</p><p>CPLFW <ref type="bibr" coords="11,101.51,356.44,15.93,8.96" target="#b44">[45]</ref>: The Cross-Pose LFW (CPLFW) dataset <ref type="bibr" coords="11,48.96,368.79,16.60,8.64" target="#b44">[45]</ref> is based on LFW with a focus on comparison pairs with pose differences. CPLFW contains 3000 genuine comparisons, while the negative pairs are selected of the same gender and race. More information can be found in <ref type="bibr" coords="11,265.37,404.65,16.60,8.64" target="#b44">[45]</ref> and http://whdeng.cn/CPLFW/.</p><p>XQLFW <ref type="bibr" coords="11,101.12,428.17,15.93,8.96" target="#b24">[25]</ref>: The Cross-Quality LFW (XQLFW) is derived from the LFW dataset. The XQLFW maximizes the quality difference, which contains only more realistic synthetically degraded images when necessary and is used to investigate the influence of image quality. XQLFW is licensed under the MIT License, and the detailed information can be found in <ref type="bibr" coords="11,266.32,488.34,16.60,8.64" target="#b24">[25]</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="11,319.45,126.39,102.96,8.59">G. Use of existing assets</head><p>The results of the SOTA FIQA methods are produced based on the official code provided by each of these works. Table <ref type="table" coords="11,311.98,165.14,9.95,8.64" target="#tab_4">III</ref> presents the used SOTA methods along with link to their code repositories and licences.</p><p>The utilized FR models to report the verification performance at different quality rejection rates are ArcFace <ref type="bibr" coords="11,548.93,200.58,10.58,8.64" target="#b5">[6]</ref>, ElasticFace (ElasticFace-Arc) <ref type="bibr" coords="11,435.53,212.53,10.58,8.64" target="#b3">[4]</ref>, MagFace <ref type="bibr" coords="11,493.68,212.53,15.27,8.64" target="#b30">[31]</ref>, and Curric-ularFace <ref type="bibr" coords="11,351.17,224.49,15.27,8.64" target="#b18">[19]</ref>. The link to the official code repository and license for each of the employed FR models are provided in the following:</p><p>• ArcFace <ref type="bibr" coords="11,368.46,260.97,11.62,8.64" target="#b5">[6]</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="11,319.45,509.77,220.85,8.59">H. Release of implementation and pre-trained models</head><p>The implementation and pre-trained models will be released publicly under the Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license. This is shared under: https://github.com/fdbtrs/CR-FIQA.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="11,319.45,581.09,115.49,8.59">I. Potential societal impacts</head><p>We stress that our efforts in the advancement of FIQA and thus, face recognition, are aimed at enhancing the security, convenience, and life quality of the members of society, e.g. enabling convenient access to financial and health services <ref type="bibr" coords="11,551.42,631.80,11.62,8.64" target="#b6">[7]</ref> and enhancing the security of border checks within clear legal frameworks and users consent <ref type="bibr" coords="11,445.94,655.71,15.27,8.64" target="#b39">[40]</ref>, <ref type="bibr" coords="11,470.38,655.71,10.58,8.64">[1]</ref>. We acknowledge, however reject, the possible malicious or illegal use of this and other machine learning-based technologies. Such a use of face recognition can involve the processing of face images for barometric recognition purposes out of legal framework and without the consent of the individual to create user/group profiles or the not consent use of face recognition in functionalities beyond the identity recognition itself <ref type="bibr" coords="11,493.81,739.40,15.27,8.64" target="#b29">[30]</ref>.   </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,311.98,380.78,251.06,8.64;3,311.98,392.74,251.06,8.64;3,311.98,404.69,251.06,8.64;3,311.98,416.65,251.06,8.64;3,311.98,428.60,52.83,8.64"><head>Fig. 2 :</head><label>2</label><figDesc>Fig.2: ERCs showing the verification performance as FNMR at FMR 1e-3 (2a) and 1e-4 (2b) with CCS, NNCCS and CR as FIQ vs. rejection ratio. This ERC plots show the effectiveness of rejecting samples with the lowest CCS and CR on the performance.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="7,48.96,619.89,514.07,8.64;7,48.96,631.85,514.07,8.64;7,48.96,643.80,496.17,8.64"><head>Fig. 4 :</head><label>4</label><figDesc>Fig.4: ERC (FNMR at FMR1e-3 vs reject) curves for all evaluated benchmarks. The proposed CR-FIQA(L) and CR-FIQA(S) are marked with solid blue and red lines, respectively. CR-FIQA leads to lower verification error, when rejecting a fraction of images, of the lowest quality, in comparison to SOTA methods (faster decaying curve) under most experimental settings.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="10,58.93,339.14,241.09,8.64;10,48.96,351.10,251.06,8.64;10,48.96,363.05,251.06,8.64;10,48.96,375.01,251.06,8.64;10,48.96,386.96,251.06,8.64;10,48.96,398.92,251.06,8.64;10,48.96,410.87,251.06,8.64;10,48.96,422.83,251.06,8.64;10,48.96,434.78,251.06,8.64;10,48.96,446.74,251.06,8.64;10,48.96,458.69,251.06,8.64;10,48.96,470.65,251.06,8.64;10,48.96,482.60,251.06,8.64;10,48.96,494.56,251.06,8.64;10,48.96,506.51,251.06,8.64;10,48.96,518.47,251.06,8.64;10,48.96,530.43,251.06,8.64;10,48.96,542.38,251.06,8.64;10,48.96,554.34,251.06,8.64;10,48.96,566.29,127.83,8.64"><head>Figures 5 , 6 , 7</head><label>567</label><figDesc>Figures 5, 6, 7 and 8 present a comparison between ERCs (FNMR at FMR1e-3) of CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top) on the evaluation benchmarks. Figures 9, 10,11 and 12 present a comparison between ERCs (FNMR at FMR1e-4) of CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top), and CCS-FIQA(S) (On top) on the evaluation benchmarks. These ERC curves are complementary to the ablation study presented in main manuscript (Section 5). In the main submission, these ERC curves are presented for ArcFace<ref type="bibr" coords="10,224.15,446.74,11.62,8.64" target="#b5">[6]</ref> FR model on Adience<ref type="bibr" coords="10,85.67,458.69,10.58,8.64" target="#b7">[8]</ref>, AgeDb-30<ref type="bibr" coords="10,148.84,458.69,15.27,8.64" target="#b33">[34]</ref>, CALFW<ref type="bibr" coords="10,209.80,458.69,16.60,8.64" target="#b45">[46]</ref> and CFP-FP<ref type="bibr" coords="10,283.42,458.69,16.60,8.64" target="#b36">[37]</ref> in Figure3(main submission) and discussed on ablation study section (Section 5 of main submission). However, in this supplementary material we opt to provide the evaluation mentioned in Lines 583-597 on all considered FR models and evaluation benchmarks to stress the conclusion of our ablation study (Section 5 of main submission). This again points out the benefits of CR of CCS (thus the NNCCS term in equation 4 of the main submission), as well as the simultaneously training rather than on the top learning.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="10,58.93,339.14,241.09,8.64;10,48.96,351.10,251.06,8.64;10,48.96,363.05,251.06,8.64;10,48.96,375.01,251.06,8.64;10,48.96,386.96,251.06,8.64;10,48.96,398.92,251.06,8.64;10,48.96,410.87,251.06,8.64;10,48.96,422.83,251.06,8.64;10,48.96,434.78,251.06,8.64;10,48.96,446.74,251.06,8.64;10,48.96,458.69,251.06,8.64;10,48.96,470.65,251.06,8.64;10,48.96,482.60,251.06,8.64;10,48.96,494.56,251.06,8.64;10,48.96,506.51,251.06,8.64;10,48.96,518.47,251.06,8.64;10,48.96,530.43,251.06,8.64;10,48.96,542.38,251.06,8.64;10,48.96,554.34,251.06,8.64;10,48.96,566.29,127.83,8.64"><head></head><label></label><figDesc>Figures 5, 6, 7 and 8 present a comparison between ERCs (FNMR at FMR1e-3) of CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top) on the evaluation benchmarks. Figures 9, 10,11 and 12 present a comparison between ERCs (FNMR at FMR1e-4) of CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top), and CCS-FIQA(S) (On top) on the evaluation benchmarks. These ERC curves are complementary to the ablation study presented in main manuscript (Section 5). In the main submission, these ERC curves are presented for ArcFace<ref type="bibr" coords="10,224.15,446.74,11.62,8.64" target="#b5">[6]</ref> FR model on Adience<ref type="bibr" coords="10,85.67,458.69,10.58,8.64" target="#b7">[8]</ref>, AgeDb-30<ref type="bibr" coords="10,148.84,458.69,15.27,8.64" target="#b33">[34]</ref>, CALFW<ref type="bibr" coords="10,209.80,458.69,16.60,8.64" target="#b45">[46]</ref> and CFP-FP<ref type="bibr" coords="10,283.42,458.69,16.60,8.64" target="#b36">[37]</ref> in Figure3(main submission) and discussed on ablation study section (Section 5 of main submission). However, in this supplementary material we opt to provide the evaluation mentioned in Lines 583-597 on all considered FR models and evaluation benchmarks to stress the conclusion of our ablation study (Section 5 of main submission). This again points out the benefits of CR of CCS (thus the NNCCS term in equation 4 of the main submission), as well as the simultaneously training rather than on the top learning.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="13,48.96,604.11,514.07,8.64;13,48.96,616.07,514.07,8.64;13,48.96,628.02,514.07,8.64;13,48.96,639.98,514.07,8.64;13,48.96,651.93,177.56,8.64"><head>12 FNMR 12 FNMRFig. 5 : 16 FNMR 6 FNMR 5 FNMRFig. 6 : 10 FNMRFig. 7 : 20 FNMR 14 FNMR 6 FNMR 5 FNMRFig. 8 : 25 FNMRFig. 9 : 25 FNMR 40 FNMR 7 FNMR 6 FNMRFig. 10 : 30 FNMRFig. 11 : 6 FNMR 4 FNMR 7 FNMR 6 FNMRFig. 12 :Fig. 13 :</head><label>1212516656107201465825925407610301164761213</label><figDesc>Fig.5: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-3) using ArcFace and ElasticFace models on Adience, AgeDb-30 and CFP-FP benchmarks . CR-FIQA(S) and CCS-FIQA(S) outperformed the ontop solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples). AUC values are mentioned under the plots.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="22,48.96,639.01,514.07,8.64;22,48.96,650.96,184.00,8.64"><head>Fig. 15 :Fig. 16 :Fig. 17 :Fig. 18 :Fig. 19 :Fig. 20 :Fig. 21 :</head><label>15161718192021</label><figDesc>Fig. 15: Quality score distribution of the evaluation benchmarks achieved by our CR-FIQA and the SOTA methods (all normalized to have values between 0 and 1).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="6,48.96,390.47,514.07,56.46"><head>TABLE I :</head><label>I</label><figDesc></figDesc><table /><note>The AUCs of ERC achieved by our CR-FIQA and the SOTA methods under different experimental settings. CR-FIQA achieved the best performance (lowest AUC) in almost all settings. On XQLFW, the SER-FIQ (marked with *) is used for the sample selection of the XQLFW benchmark. The best result for each experimental setting is in bold and the second-ranked one is in italic. The notions of 1e − 3 and 1e − 4 indicate the value of the fixed FMR at which the ERC curve (FNMR vs. reject) was calculated at.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="6,48.96,566.40,514.07,20.59"><head>TABLE II :</head><label>II</label><figDesc></figDesc><table /><note>Verification performance on the IJB-C (1:1 mixed verification)<ref type="bibr" coords="6,353.04,566.40,15.27,8.64" target="#b28">[29]</ref>. CR-FIQA outperformed SOTA methods under all settings.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="11,48.96,57.95,514.07,690.08"><head></head><label></label><figDesc>Zoo https://github.com/deepinsight/insightface/ tree/master/recognition/ datasets . The code and the databases of InsightFace is under MIT licence (https://github.com/ deepinsight/insightface/blob/master/LICENSE).MS1MV2 is available in InsightFace (https://insightface.ai/ repository under Dataset-Zoo https://github.com/deepinsight/ insightface/tree/master/recognition/ datasets . The code and the database of InsightFace is under MIT licence (https: //github.com/deepinsight/insightface/blob/master/LICENSE).</figDesc><table coords="11,48.96,488.34,251.06,187.96"><row><cell>and</cell></row><row><cell>https://martlgap.github.io/xqlfw/.</cell></row><row><cell>IJB-C [29]: The IARPA Janus Benchmark-C (IJB-C) [29]</cell></row><row><cell>is a video-based face recognition dataset provided by the</cell></row><row><cell>Nation Institute for Standards and Technology (NIST). It</cell></row><row><cell>is an extension of the IJB-B [42] dataset with a total of</cell></row><row><cell>31,334 still images and 117,542 frames of 11,779 videos</cell></row><row><cell>across 3531 identities. IJB-C is made available under different</cell></row><row><cell>Creative Commons license variants. Detailed information on</cell></row><row><cell>database creation can be found in [29] and https://www.nist.</cell></row><row><cell>gov/programs-projects/face-challenges.</cell></row><row><cell>CASIA-WebFace [44]: CASIA-Webface consists of</cell></row><row><cell>494,141 face images from 10,757 different identities. A pre-</cell></row><row><cell>possessed (aligned and cropped) version of CASIA-WebFace</cell></row><row><cell>is available in InsightFace (https://insightface.ai/) repository</cell></row><row><cell>under Dataset-</cell></row></table><note>MS1MV2<ref type="bibr" coords="11,103.95,715.10,15.27,8.96" target="#b13">[14]</ref>,<ref type="bibr" coords="11,126.54,715.10,11.20,8.96" target="#b5">[6]</ref>: The MS1MV2 is a refined version<ref type="bibr" coords="11,288.41,715.49,11.62,8.64" target="#b5">[6]</ref> of the MS-Celeb-1M<ref type="bibr" coords="11,142.10,727.44,16.60,8.64" target="#b13">[14]</ref> containing 5.8M images of 85K identities. A prepossessed (aligned and cropped) version of</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" coords="11,321.94,260.97,241.09,235.79"><head></head><label></label><figDesc>is provided under MIT license https://github. com/deepinsight/insightface/blob/master/LICENSE and the official pretrained model and code is published under the link https://github.com/deepinsight/insightface.</figDesc><table coords="11,321.94,308.79,241.09,187.96"><row><cell cols="2">• MagFace [31] is provided under Apache License</cell></row><row><cell>2.0</cell><cell>https://github.com/IrvingMeng/MagFace/</cell></row><row><cell cols="2">blob/main/LICENSE and the official pretrained</cell></row><row><cell cols="2">model and code is published under the link</cell></row><row><cell cols="2">https://github.com/IrvingMeng/MagFace.</cell></row><row><cell cols="2">• CurricularFace [19] is provided underMIT license</cell></row><row><cell cols="2">https://github.com/HuangYG123/CurricularFace/</cell></row><row><cell cols="2">blob/master/LICENSE and the official pretrained</cell></row><row><cell cols="2">model and code is published under the link</cell></row><row><cell cols="2">https://github.com/HuangYG123/CurricularFace/.</cell></row><row><cell cols="2">• ElasticFace [4] is provided under Attribution-</cell></row><row><cell cols="2">NonCommercial-ShareAlike 4.0 International (CC</cell></row><row><cell cols="2">BY-NC-SA 4.0) license https://github.com/fdbtrs/</cell></row><row><cell cols="2">ElasticFace/blob/main/README.md and the official</cell></row><row><cell cols="2">pretrained model and code is published under the link</cell></row><row><cell cols="2">lhttps://github.com/fdbtrs/ElasticFace.</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1">Training codes and pre-trained models are publicly available under . https: //github.com/fdbtrs/CR-FIQA</note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head coords="12,54.29,53.81,22.09,6.16">Method</head><p>Code link License SER-FIQA <ref type="bibr" coords="12,88.73,66.32,11.83,6.16" target="#b38">[39]</ref> https://github.com/pterhoer/FaceImageQuality Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license https://github.com/pterhoer/FaceImageQuality/blob/master/README.md FaceQnet <ref type="bibr" coords="12,83.88,78.48,11.83,6.16" target="#b15">[16]</ref> https://github.  Unlike methods where the FIQA does not require to train a quality regression <ref type="bibr" coords="12,136.18,261.17,15.27,8.64" target="#b38">[39]</ref>, <ref type="bibr" coords="12,160.04,261.17,15.27,8.64" target="#b30">[31]</ref>, <ref type="bibr" coords="12,183.90,261.17,16.60,8.64" target="#b37">[38]</ref> our CR-FIQA requires a training a regression. However, this only required to be done once and the resulting model can be used to estimate quality for multiple efficiently FR models as demonstrated by the result.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="8,82.58,645.05,217.44,6.91;8,67.22,654.02,150.45,6.91" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Public act 095-994, Illinois General Assembly</title>
+		<idno>ILCS/14</idno>
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+	<note>Biometric Information Privacy Act (BIPA)</note>
+</biblStruct>
+
+<biblStruct coords="8,67.22,661.99,232.80,6.91;8,67.22,670.81,232.80,7.05;8,67.22,679.92,46.31,6.91" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Learning face image quality from human assessments</title>
+		<author>
+			<persName coords=""><forename type="first">Lacey</forename><surname>Best-Rowden</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anil</forename><forename type="middle">K</forename><surname>Jain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Inf. Forensics Secur</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="3064" to="3077" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,687.89,232.80,6.91;8,67.22,696.86,232.80,6.91;8,67.22,705.68,232.80,7.05;8,67.22,714.65,119.31,7.05" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Deep neural networks for no-reference and full-reference image quality assessment</title>
+		<author>
+			<persName coords=""><forename type="first">Sebastian</forename><surname>Bosse</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dominique</forename><surname>Maniry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Klaus-Robert</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Wiegand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wojciech</forename><surname>Samek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Image Process</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">12</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,722.76,232.80,6.91;8,67.22,731.59,232.80,7.05;8,67.22,740.69,128.88,6.91" xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Elasticface: Elastic margin loss for deep face recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Fadi</forename><surname>Boutros</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Naser</forename><surname>Damer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Florian</forename><surname>Kirchbuchner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Arjan</forename><surname>Kuijper</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,59.25,232.80,6.91;8,330.24,68.07,232.80,7.05;8,330.24,77.04,119.23,7.05" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Face image quality assessment based on learning to rank</title>
+		<author>
+			<persName coords=""><forename type="first">Jiansheng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yu</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gaocheng</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Guangda</forename><surname>Su</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Signal Process. Lett</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">12</biblScope>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,85.15,232.80,6.91;8,330.24,93.98,232.80,7.05;8,330.24,102.94,232.80,6.87;8,330.24,111.91,232.80,7.05;8,330.24,121.02,193.29,6.91" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Arcface: Additive angular margin loss for deep face recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Jiankang</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jia</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Niannan</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stefanos</forename><surname>Zafeiriou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Conference on Computer Vision and Pattern Recognition</title>
+				<meeting><address><addrLine>Long Beach, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+	<note>Computer Vision Foundation / IEEE</note>
+</biblStruct>
+
+<biblStruct coords="8,330.24,128.99,232.80,6.91;8,330.24,137.95,74.01,6.91" xml:id="b6">
+	<monogr>
+		<ptr target="https://eaadhaar.uidai.gov.in/,2015.11" />
+		<title level="m">Unique Identification Authority of India</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,145.92,232.80,6.91;8,330.24,154.75,232.80,7.05;8,330.24,163.86,47.10,6.91" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Age and gender estimation of unfiltered faces</title>
+		<author>
+			<persName coords=""><forename type="first">Eran</forename><surname>Eidinger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Roee</forename><surname>Enbar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tal</forename><surname>Hassner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Inf. Forensics Secur</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">10</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,171.83,232.80,6.91;8,330.24,180.79,74.77,6.91" xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Best practice technical guidelines for automated border control (abc) systems</title>
+		<author>
+			<persName coords=""><surname>Frontex</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,188.76,232.80,6.91;8,330.24,197.73,232.80,6.91;8,330.24,206.55,158.94,7.05" xml:id="b9">
+	<monogr>
+		<title level="m" type="main">A deep insight into measuring face image utility with general and face-specific image quality metrics</title>
+		<author>
+			<persName coords=""><forename type="first">Biying</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Olaf</forename><surname>Henniger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Naser</forename><surname>Damer</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,214.52,232.80,7.05;8,330.24,223.49,232.80,6.87;8,330.24,232.60,170.07,6.91" xml:id="b10">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Ross</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Girshick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Fast R-Cnn</surname></persName>
+		</author>
+		<title level="m">2015 IEEE International Conference on Computer Vision</title>
+				<meeting><address><addrLine>Santiago, Chile</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2015-12-07" />
+			<biblScope unit="page" from="1440" to="1448" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,240.57,232.80,6.91;8,330.24,249.54,232.80,6.91;8,330.24,258.36,232.80,7.05;8,330.24,267.47,12.75,6.91" xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Ongoing face recognition vendor test (frvt) part 5: Face image quality assessment (4th draft). In National Institute of Standards and Technology</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Grother</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Ngan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Hom</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Hanaoka</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Tech. Rep.</note>
+</biblStruct>
+
+<biblStruct coords="8,330.24,275.44,232.80,6.91;8,330.24,284.26,232.80,7.05;8,330.24,293.37,59.06,6.91" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Performance of biometric quality measures</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Grother</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Tabassi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. on Pattern Analysis and Machine Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="531" to="543" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,301.34,232.80,6.91;8,330.24,310.31,232.80,6.91;8,330.24,319.27,232.80,6.91;8,330.24,328.10,232.80,6.87;8,330.24,337.06,232.80,7.05;8,330.24,346.03,232.80,7.05;8,330.24,355.14,55.87,6.91" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Ms-celeb-1m: A dataset and benchmark for large-scale face recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Yandong</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuxiao</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaodong</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jianfeng</forename><surname>Gao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Vision -ECCV 2016 -14th European Conference</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">Jiri</forename><surname>Bastian Leibe</surname></persName>
+			<persName><forename type="first">Nicu</forename><surname>Matas</surname></persName>
+			<persName><forename type="first">Max</forename><surname>Sebe</surname></persName>
+			<persName><surname>Welling</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Amsterdam, The Netherlands</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2004" />
+			<biblScope unit="volume">9907</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part III</note>
+</biblStruct>
+
+<biblStruct coords="8,330.24,363.11,232.80,6.91;8,330.24,371.93,232.80,7.05;8,330.24,380.90,232.80,6.87;8,330.24,389.87,232.80,7.05;8,330.24,398.98,12.75,6.91" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Deep residual learning for image recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiangyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shaoqing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jian</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2016</title>
+				<meeting><address><addrLine>Las Vegas, NV, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">4</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,406.95,232.80,6.91;8,330.24,415.91,232.80,6.91;8,330.24,424.74,184.71,7.05" xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Biometric quality: Review and application to face recognition with faceqnet. CoRR, abs</title>
+		<author>
+			<persName coords=""><forename type="first">Javier</forename><surname>Hernandez-Ortega</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Javier</forename><surname>Galbally</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Julian</forename><surname>Fiérrez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Laurent</forename><surname>Beslay</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,432.85,232.80,6.91;8,330.24,441.82,232.80,6.91;8,330.24,450.64,232.80,7.05;8,330.24,459.61,232.80,7.05;8,330.24,468.71,43.12,6.91" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Faceqnet: Quality assessment for face recognition based on deep learning</title>
+		<author>
+			<persName coords=""><forename type="first">Javier</forename><surname>Hernandez-Ortega</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Javier</forename><surname>Galbally</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Julian</forename><surname>Fiérrez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rudolf</forename><surname>Haraksim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Laurent</forename><surname>Beslay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Biometrics</title>
+				<meeting><address><addrLine>Crete, Greece</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,476.68,232.80,6.91;8,330.24,485.65,232.80,6.91;8,330.24,494.62,232.80,6.91;8,330.24,503.58,158.62,6.91" xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Labeled faces in the wild: A database for studying face recognition in unconstrained environments</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Gary</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Manu</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tamara</forename><surname>Ramesh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Erik</forename><surname>Berg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Learned-Miller</surname></persName>
+		</author>
+		<idno>07-49</idno>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">11</biblScope>
+			<pubPlace>Amherst</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Massachusetts</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct coords="8,330.24,511.55,232.80,6.91;8,330.24,520.52,232.80,6.91;8,330.24,529.34,232.80,7.05;8,330.24,538.31,232.80,6.87;8,330.24,547.28,232.80,7.05;8,330.24,556.39,139.44,6.91" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Curricularface: Adaptive curriculum learning loss for deep face recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Yuge</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuhan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ying</forename><surname>Tai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaoming</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pengcheng</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shaoxin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jilin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Feiyue</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+				<meeting><address><addrLine>Seattle, WA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="volume">2020</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+	<note>Computer Vision Foundation / IEEE</note>
+</biblStruct>
+
+<biblStruct coords="8,330.24,564.36,232.80,6.91;8,330.24,573.32,204.23,6.91" xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Portrait Quality -Reference Facial Images for MRTD. International Civil Aviation Organization</title>
+		<idno>ISO/IEC JTC1 SC17 WG3</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,581.29,232.80,6.91;8,330.24,590.26,232.80,6.91;8,330.24,599.22,136.70,6.91" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Information technology -Biometric sample quality -Part 1: Framework. International Organization for Standardization</title>
+	</analytic>
+	<monogr>
+		<title level="m">ISO/IEC JTC1 SC37 Biometrics. ISO/IEC</title>
+				<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="29794" to="29795" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,607.20,232.80,6.91;8,330.24,616.16,232.80,6.91;8,330.24,625.13,107.67,6.91" xml:id="b21">
+	<analytic>
+	</analytic>
+	<monogr>
+		<title level="m">ISO/IEC JTC1 SC37 Biometrics. ISO/IEC 2382-37:2017 Information technology -Vocabulary -Part</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="volume">37</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,633.10,232.80,6.91;8,330.24,642.06,232.80,6.91;8,330.24,651.03,232.80,6.91;8,330.24,660.00,42.77,6.91" xml:id="b22">
+	<monogr>
+		<title level="m" type="main">ISO/IEC 19795-1:2021 Information technology -Biometric performance testing and reporting -Part 1: Principles and framework. International Organization for Standardization</title>
+		<author>
+			<persName coords=""><surname>Iso/Iec Jtc1 Sc37</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Biometrics</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,667.97,232.80,6.91;8,330.24,676.79,232.80,7.05;8,330.24,685.76,232.80,6.87;8,330.24,694.72,160.53,7.05" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Optimizing search engines using clickthrough data</title>
+		<author>
+			<persName coords=""><forename type="first">Thorsten</forename><surname>Joachims</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Eighth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</title>
+				<meeting>the Eighth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining<address><addrLine>Edmonton, Alberta, Canada</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="133" to="142" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,702.84,232.80,6.91;8,330.24,711.80,232.80,6.91;8,330.24,720.63,232.80,7.05;8,330.24,729.74,7.97,6.91" xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Cross-quality LFW: A database for analyzing cross-resolution image face recognition in unconstrained environments. CoRR, abs</title>
+		<author>
+			<persName coords=""><forename type="first">Martin</forename><surname>Knoche</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stefan</forename><surname>Hörmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gerhard</forename><surname>Rigoll</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.24,737.71,232.80,6.91;9,67.22,59.25,232.80,6.91;9,67.22,68.07,232.80,7.05;9,67.22,77.04,232.80,7.05;9,67.22,86.15,108.48,6.91" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Sphereface: Deep hypersphere embedding for face recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Weiyang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yandong</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhiding</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ming</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bhiksha</forename><surname>Raj</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Le</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE Conference on Computer Vision and Pattern Recognition</title>
+				<meeting><address><addrLine>Honolulu, HI, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2017-07-21" />
+			<biblScope unit="page" from="6738" to="6746" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,94.12,232.80,6.91;9,67.22,103.09,232.80,6.91;9,67.22,111.91,232.80,7.05;9,67.22,121.02,79.20,6.91" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">SphereFace: Deep hypersphere embedding for face recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Weiyang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yandong</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhiding</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ming</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bhiksha</forename><surname>Raj</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Le</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. of the IEEE Conf. on Computer Vision and Pattern Recognition</title>
+				<meeting>of the IEEE Conf. on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="212" to="220" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,128.99,232.80,6.91;9,67.22,137.95,232.80,6.91;9,67.22,146.78,232.80,6.87;9,67.22,155.74,232.80,7.05;9,67.22,164.85,55.87,6.91" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Learning from rankings for no-reference image quality assessment</title>
+		<author>
+			<persName coords=""><forename type="first">Xialei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joost</forename><surname>Van De Weijer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">D</forename><surname>Bagdanov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Rankiqa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Computer Vision</title>
+				<meeting><address><addrLine>Venice, Italy</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,172.82,232.80,6.91;9,67.22,181.79,232.80,6.91;9,67.22,190.76,232.80,6.91;9,67.22,199.58,232.80,7.05;9,67.22,208.55,232.80,7.05;9,67.22,217.66,77.92,6.91" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">IARPA janus benchmark -C: face dataset and protocol</title>
+		<author>
+			<persName coords=""><forename type="first">Brianna</forename><surname>Maze</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jocelyn</forename><forename type="middle">C</forename><surname>Adams</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><forename type="middle">A</forename><surname>Duncan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nathan</forename><forename type="middle">D</forename><surname>Kalka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tim</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Charles</forename><surname>Otto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anil</forename><forename type="middle">K</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">Tyler</forename><surname>Niggel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Janet</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jordan</forename><surname>Cheney</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Patrick</forename><surname>Grother</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2018 International Conference on Biometrics</title>
+				<meeting><address><addrLine>Gold Coast, Australia</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,225.63,232.80,6.91;9,67.22,234.59,232.80,6.91;9,67.22,243.42,232.80,7.05;9,67.22,252.38,137.53,7.05" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Privacyenhancing face biometrics: A comprehensive survey</title>
+		<author>
+			<persName coords=""><forename type="first">Blaz</forename><surname>Meden</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><surname>Rot</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Philipp</forename><surname>Terhörst</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Naser</forename><surname>Damer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Arjan</forename><surname>Kuijper</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Walter</forename><forename type="middle">J</forename><surname>Scheirer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Arun</forename><surname>Ross</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><surname>Peer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vitomir</forename><surname>Struc</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Inf. Forensics Secur</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="4147" to="4183" />
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,260.50,232.80,6.91;9,67.22,269.46,232.80,6.91;9,67.22,278.28,232.80,6.87;9,67.22,287.25,232.80,7.05;9,67.22,296.36,160.96,6.91" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Magface: A universal representation for face recognition and quality assessment</title>
+		<author>
+			<persName coords=""><forename type="first">Qiang</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shichao</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhida</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Feng</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2021, virtual</title>
+				<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+	<note>Computer Vision Foundation / IEEE</note>
+</biblStruct>
+
+<biblStruct coords="9,67.22,304.33,232.80,6.91;9,67.22,313.15,232.80,7.05;9,67.22,322.12,182.95,7.05" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Noreference image quality assessment in the spatial domain</title>
+		<author>
+			<persName coords=""><forename type="first">Anish</forename><surname>Mittal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Krishna</forename><surname>Anush</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alan</forename><forename type="middle">Conrad</forename><surname>Moorthy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bovik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Image Process</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">12</biblScope>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,330.23,232.80,6.91;9,67.22,339.06,232.80,7.05;9,67.22,348.17,77.74,6.91" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Making a &quot;completely blind&quot; image quality analyzer</title>
+		<author>
+			<persName coords=""><forename type="first">Anish</forename><surname>Mittal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rajiv</forename><surname>Soundararajan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alan</forename><forename type="middle">C</forename><surname>Bovik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Signal Process. Lett</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="209" to="212" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,356.14,232.80,6.91;9,67.22,365.10,232.80,6.91;9,67.22,373.93,232.80,7.05;9,67.22,382.89,232.80,7.05;9,67.22,392.00,183.40,6.91" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Agedb: The first manually collected, in-the-wild age database</title>
+		<author>
+			<persName coords=""><forename type="first">Stylianos</forename><surname>Moschoglou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Athanasios</forename><surname>Papaioannou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christos</forename><surname>Sagonas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jiankang</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Irene</forename><surname>Kotsia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stefanos</forename><surname>Zafeiriou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE CVPRW</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">11</biblScope>
+			<date type="published" when="1997" />
+			<publisher>IEEE Computer Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,399.97,232.80,6.91;9,67.22,408.94,232.80,6.91;9,67.22,417.90,232.80,6.91;9,67.22,426.73,232.80,7.05;9,67.22,435.69,232.80,7.05;9,67.22,444.80,180.14,6.91" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">SDD-FIQA: unsupervised face image quality assessment with similarity distribution distance</title>
+		<author>
+			<persName coords=""><forename type="first">Xingyu</forename><surname>Fu-Zhao Ou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ruixin</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuge</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shaoxin</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jilin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yong</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Liujuan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuan-Gen</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2021, virtual</title>
+				<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+	<note>Computer Vision Foundation / IEEE</note>
+</biblStruct>
+
+<biblStruct coords="9,67.22,452.77,232.80,6.91;9,67.22,461.74,232.80,6.91;9,67.22,470.71,232.80,6.91;9,67.22,479.67,232.80,6.91;9,67.22,488.64,232.80,6.91;9,67.22,497.61,232.80,6.91;9,67.22,506.57,232.80,6.91;9,67.22,515.40,232.80,7.05;9,67.22,524.50,146.98,6.91" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Pytorch: An imperative style, high-performance deep learning library</title>
+		<author>
+			<persName coords=""><forename type="first">Adam</forename><surname>Paszke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sam</forename><surname>Gross</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Francisco</forename><surname>Massa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Adam</forename><surname>Lerer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Bradbury</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gregory</forename><surname>Chanan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Trevor</forename><surname>Killeen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zeming</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Natalia</forename><surname>Gimelshein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Luca</forename><surname>Antiga</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alban</forename><surname>Desmaison</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andreas</forename><surname>Kopf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Edward</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zachary</forename><surname>Devito</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Martin</forename><surname>Raison</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alykhan</forename><surname>Tejani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sasank</forename><surname>Chilamkurthy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Benoit</forename><surname>Steiner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lu</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Junjie</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Soumith</forename><surname>Chintala</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<editor>
+			<persName><forename type="first">H</forename><surname>Wallach</surname></persName>
+			<persName><forename type="first">H</forename><surname>Larochelle</surname></persName>
+			<persName><forename type="first">A</forename><surname>Beygelzimer</surname></persName>
+			<persName><forename type="first">F</forename><surname>Buc</surname></persName>
+			<persName><forename type="first">E</forename><surname>Fox</surname></persName>
+			<persName><forename type="first">R</forename><surname>Garnett</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="8024" to="8035" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,532.48,232.80,6.91;9,67.22,541.44,232.80,6.91;9,67.22,550.26,232.80,7.05;9,67.22,559.23,232.80,6.87;9,67.22,568.20,232.80,7.05;9,67.22,577.31,7.97,6.91" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Frontal to profile face verification in the wild</title>
+		<author>
+			<persName coords=""><forename type="first">Soumyadip</forename><surname>Sengupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jun-Cheng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Carlos</forename><forename type="middle">Domingo</forename><surname>Castillo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vishal</forename><forename type="middle">M</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rama</forename><surname>Chellappa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><forename type="middle">W</forename><surname>Jacobs</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Winter Conference on Applications of Computer Vision, WACV 2016</title>
+				<meeting><address><addrLine>Lake Placid, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,585.13,232.80,7.05;9,67.22,594.10,232.80,6.87;9,67.22,603.07,232.80,7.05;9,67.22,612.18,86.68,6.91" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Probabilistic face embeddings</title>
+		<author>
+			<persName coords=""><forename type="first">Yichun</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anil</forename><forename type="middle">K</forename><surname>Jain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE/CVF International Conference on Computer Vision, ICCV 2019</title>
+				<meeting><address><addrLine>Seoul, Korea (South)</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,620.15,232.80,6.91;9,67.22,629.11,232.80,6.91;9,67.22,637.94,232.80,7.05;9,67.22,646.90,232.80,6.87;9,67.22,655.87,232.80,7.05;9,67.22,664.98,139.44,6.91" xml:id="b38">
+	<analytic>
+		<title level="a" type="main">SER-FIQ: unsupervised estimation of face image quality based on stochastic embedding robustness</title>
+		<author>
+			<persName coords=""><forename type="first">Philipp</forename><surname>Terhörst</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jan</forename><forename type="middle">Niklas</forename><surname>Kolf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Naser</forename><surname>Damer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Florian</forename><surname>Kirchbuchner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Arjan</forename><surname>Kuijper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+				<meeting><address><addrLine>Seattle, WA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="volume">2020</biblScope>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+	<note>Computer Vision Foundation / IEEE</note>
+</biblStruct>
+
+<biblStruct coords="9,67.22,672.81,232.79,7.05;9,67.22,681.77,203.17,7.05" xml:id="b39">
+	<monogr>
+		<title level="m" type="main">The EU General Data Protection Regulation (GDPR): A Practical Guide</title>
+		<author>
+			<persName coords=""><forename type="first">Paul</forename><surname>Voigt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Axel</forename><surname>Von Dem Bussche</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note>1st edition</note>
+</biblStruct>
+
+<biblStruct coords="9,67.22,689.88,232.80,6.91;9,67.22,698.85,232.80,6.91;9,67.22,707.67,232.80,7.05;9,67.22,716.64,232.80,6.87;9,67.22,725.61,214.17,7.05" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Cosface: Large margin cosine loss for deep face recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Hao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yitong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zheng</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xing</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dihong</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jingchao</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhifeng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wei</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE Conference on Computer Vision and Pattern Recognition</title>
+				<meeting><address><addrLine>Salt Lake City, UT, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2018-06-18" />
+			<biblScope unit="page" from="5265" to="5274" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,67.22,733.72,232.80,6.91;9,330.24,59.25,232.80,6.91;9,330.24,68.22,232.80,6.91;9,330.24,77.04,232.80,7.05;9,330.24,86.01,232.80,6.87;9,330.24,94.97,232.80,7.05;9,330.24,104.08,57.74,6.91" xml:id="b41">
+	<analytic>
+		<title level="a" type="main">IARPA janus benchmark-b face dataset</title>
+		<author>
+			<persName coords=""><forename type="first">Cameron</forename><surname>Whitelam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Emma</forename><surname>Taborsky</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Austin</forename><surname>Blanton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Brianna</forename><surname>Maze</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jocelyn</forename><forename type="middle">C</forename><surname>Adams</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tim</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nathan</forename><forename type="middle">D</forename><surname>Kalka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anil</forename><forename type="middle">K</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><forename type="middle">A</forename><surname>Duncan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kristen</forename><surname>Allen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jordan</forename><surname>Cheney</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Patrick</forename><surname>Grother</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops</title>
+				<meeting><address><addrLine>Honolulu, HI, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2017-07-21" />
+			<biblScope unit="page" from="592" to="600" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,330.24,112.05,232.80,6.91;9,330.24,120.87,232.80,7.05;9,330.24,129.84,232.80,6.87;9,330.24,138.81,112.93,7.05" xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Inducing predictive uncertainty estimation for face verification</title>
+		<author>
+			<persName coords=""><forename type="first">Weidi</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jeffrey</forename><surname>Byrne</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">31st British Machine Vision Conference 2020, BMVC 2020, Virtual Event</title>
+				<meeting><address><addrLine>UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>BMVA Press</publisher>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,330.24,146.92,232.80,6.91;9,330.24,155.74,232.80,7.05;9,330.24,164.85,7.97,6.91" xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Learning face representation from scratch. CoRR, abs/1411</title>
+		<author>
+			<persName coords=""><forename type="first">Dong</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhen</forename><surname>Lei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shengcai</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stan</forename><forename type="middle">Z</forename><surname>Li</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="volume">7923</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,330.24,172.82,232.80,6.91;9,330.24,181.79,232.80,6.91;9,330.24,190.76,232.80,6.91;9,330.24,199.72,47.10,6.91" xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Cross-pose lfw: A database for studying crosspose face recognition in unconstrained environments</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Deng</surname></persName>
+		</author>
+		<idno>18-01</idno>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+		<respStmt>
+			<orgName>Beijing University of Posts and Telecommunications</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct coords="9,330.24,207.69,232.80,6.91;9,330.24,216.66,232.80,6.91;9,330.24,225.48,180.68,7.05" xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Cross-age LFW: A database for studying cross-age face recognition in unconstrained environments. CoRR, abs</title>
+		<author>
+			<persName coords=""><forename type="first">Tianyue</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Weihong</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jiani</forename><surname>Hu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1708" />
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

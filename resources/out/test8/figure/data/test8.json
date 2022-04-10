@@ -1,0 +1,441 @@
+[{
+  "renderDpi": 300,
+  "name": "18",
+  "page": 24,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 58.8,
+    "y1": 88.32,
+    "x2": 554.16,
+    "y2": 660.0
+  },
+  "caption": "Fig. 18: ERC (FNMR at FMR1e-4 vs reject) curves for ArcFace and ElasticFace on LFW, CALFW and CPLFW benchmarks. The proposed CR-FIQA(L) and CR-FIQA(S) are marked with solid blue and red lines, respectively. CR-FIQA leads to lower verification error, when rejecting a fraction of images, of the lowest quality, in comparison to SOTA methods (faster decaying curve) under most experimental settings.",
+  "imageText": ["BRISQUE", "RankIQA", "DeepIQA", "RankIQ", "PFE", "SER-FIQ", "FaceQnet", "MagFace", "SDD-FIQA", "CR-FIQA(S)", "(Our)", "CR-FIQA(L)", "(Our)", "Testing", "on", "CPLFW,", "FMR=1e-4", "(ElasticFace)", "R", "FN", "M", "0.7", "0.6", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CPLFW,", "FMR=1e-4", "(ArcFace)", "R", "FN", "M", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CALFW,", "FMR=1e-4", "(ElasticFace)", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "0.09", "0.10", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CALFW,", "FMR=1e-4", "(ArcFace)", "R", "FN", "M", "0.10", "0.08", "0.06", "0.04", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "LFW,", "FMR=1e-4", "(ElasticFace)", "R", "FN", "M", "0.012", "0.010", "0.008", "0.006", "0.004", "0.002", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "LFW,", "FMR=1e-4", "(ArcFace)", "R", "FN", "M", "0.012", "0.010", "0.008", "0.006", "0.004", "0.002", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure18-1.png",
+  "captionBoundary": {
+    "x1": 48.96400451660156,
+    "y1": 670.4185180664062,
+    "x2": 563.0343627929688,
+    "y2": 712.2869873046875
+  }
+}, {
+  "renderDpi": 300,
+  "name": "19",
+  "page": 25,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 58.8,
+    "y1": 88.32,
+    "x2": 554.16,
+    "y2": 660.0
+  },
+  "caption": "Fig. 19: ERC (FNMR at FMR1e-4 vs reject) curves for MagFace and CurricularFace on LFW, CALFW and CPLFW benchmarks. The proposed CR-FIQA(L) and CR-FIQA(S) are marked with solid blue and red lines, respectively. CR-FIQA leads to lower verification error, when rejecting a fraction of images, of the lowest quality, in comparison to SOTA methods (faster decaying curve) under most experimental settings.",
+  "imageText": ["BRISQUE", "RankIQA", "DeepIQA", "RankIQ", "PFE", "SER-FIQ", "FaceQnet", "MagFace", "SDD-FIQA", "CR-FIQA(S)", "(Our)", "CR-FIQA(L)", "(Our)", "Testing", "on", "CPLFW,", "FMR=1e-4", "(CurricularFace)", "0.0", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CPLFW,", "FMR=1e-4", "(MagFace)", "R", "FN", "M", "0.8", "0.6", "0.4", "0.2", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CALFW,", "FMR=1e-4", "(CurricularFace)", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "0.09", "0.10", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CALFW,", "FMR=1e-4", "(MagFace)", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "0.09", "0.10", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "LFW,", "FMR=1e-4", "(CurricularFace)", "R", "FN", "M", "0.012", "0.010", "0.008", "0.006", "0.004", "0.002", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "LFW,", "FMR=1e-4", "(MagFace)", "R", "FN", "M", "0.012", "0.010", "0.008", "0.006", "0.004", "0.002", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure19-1.png",
+  "captionBoundary": {
+    "x1": 48.96400451660156,
+    "y1": 670.4185180664062,
+    "x2": 563.0341796875,
+    "y2": 712.2869873046875
+  }
+}, {
+  "renderDpi": 300,
+  "name": "7",
+  "page": 14,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 125.52,
+    "y1": 142.07999999999998,
+    "x2": 485.28,
+    "y2": 594.0
+  },
+  "caption": "Fig. 7: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-3) using MagFace and CurricularFace models on Adience, AgeDb-30 and CFP-FP benchmarks . CR-FIQA(S) and CCS-FIQA(S) outperformed the on-top solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples). AUC values are mentioned under the plots.",
+  "imageText": ["CR-FIQA", "(On-top", "model):", "0.0295", "CCS-FIQA", "(On-top", "model):", "0.0311", "CR-FIQA:", "0.0097", "CCS-FIQA:", "0.0114", "Testing", "on", "CFP-FP,", "FMR=1e", "3", "(CurricularFace)", "R", "FN", "M", "0.06", "0.05", "0.04", "0.03", "0.02", "0.01", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0351", "CCS-FIQA", "(On-top", "model):", "0.0309", "CR-FIQA:", "0.0102", "CCS-FIQA:", "0.0133", "Testing", "on", "CFP-FP,", "FMR=1e", "3", "(MagFace)", "R", "FN", "M", "0.05", "0.04", "0.03", "0.02", "0.01", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0265", "CCS-FIQA", "(On-top", "model):", "0.0249", "CR-FIQA:", "0.0156", "CCS-FIQA:", "0.0204", "Testing", "on", "AgeDb-30,", "FMR=1e", "3", "(CurricularFace)", "0.035", "0.040", "FN", "M", "R", "0.030", "0.025", "0.020", "0.015", "0.010", "0.005", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0272", "CCS-FIQA", "(On-top", "model):", "0.0271", "CR-FIQA:", "0.0165", "CCS-FIQA:", "0.0225", "Testing", "on", "AgeDb-30,", "FMR=1e", "3", "(MagFace)", "R", "FN", "M", "0.040", "0.035", "0.030", "0.025", "0.020", "0.015", "0.010", "0.005", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0568", "CCS-FIQA", "(On-top", "model):", "0.06", "CR-FIQA:", "0.0227", "CCS-FIQA:", "0.0217", "Testing", "on", "Adience,", "FMR=1e", "3", "(CurricularFace)", "R", "FN", "M", "0.10", "0.08", "0.06", "0.04", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0679", "CCS-FIQA", "(On-top", "model):", "0.0724", "CR-FIQA:", "0.0244", "CCS-FIQA:", "0.0242", "Testing", "on", "Adience,", "FMR=1e", "3", "(MagFace)", "R", "FN", "M", "0.200", "0.175", "0.150", "0.125", "0.100", "0.075", "0.050", "0.025", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure7-1.png",
+  "captionBoundary": {
+    "x1": 48.96403121948242,
+    "y1": 604.592529296875,
+    "x2": 563.0341796875,
+    "y2": 658.416015625
+  }
+}, {
+  "renderDpi": 300,
+  "name": "14",
+  "page": 20,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 99.84,
+    "y1": 386.4,
+    "x2": 512.16,
+    "y2": 681.36
+  },
+  "caption": "Fig. 14: Samples image of the evaluation benchmarks with quality score values obtained from our CR-FIQA the SOTA methods.",
+  "imageText": ["BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.41", "0.43", "0.48", "0.18", "0.43", "0.42", "0.56", "0.50", "0.18", "0.25", "0.24", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.31", "0.39", "0.40", "0.55", "0.93", "0.90", "0.50", "0.84", "0.76", "0.84", "0.93", "CPLFW", "0.36", "0.29", "0.38", "0.71", "0.93", "0.90", "0.64", "0.88", "0.83", "0.94", "0.40", "0.77", "0.24", "0.62", "0.19", "0.53", "0.80", "0.42", "0.41", "0.22", "0.31", "0.59", "XQLFW", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.24", "0.28", "0.04", "0.69", "0.88", "0.92", "0.45", "0.82", "0.92", "0.95", "0.89", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.33", "0.57", "0.53", "0.28", "0.36", "0.76", "0.16", "0.30", "0.42", "0.36", "0.57", "CALFW", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.40", "0.15", "0.38", "0.58", "0.94", "0.84", "0.58", "0.82", "0.81", "0.97", "0.87", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.44", "0.22", "0.39", "0.44", "0.74", "0.61", "0.31", "0.41", "0.52", "0.38", "0.69", "LFW", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.29", "0.43", "0.76", "0.23", "0.49", "0.76", "0.23", "0.39", "0.41", "0.30", "0.58", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.24", "0.17", "0.34", "0.63", "0.87", "0.91", "0.61", "0.69", "0.91", "0.92", "0.86", "AgeDB-30", "CFP-FP", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.32", "0.31", "0.16", "0.41", "0.65", "0.69", "0.28", "0.42", "0.67", "0.34", "0.77", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.25", "0.47", "0.43", "0.66", "1.00", "0.79", "0.64", "0.89", "0.93", "0.92", "0.91", "Adience", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.44", "0.40", "0.31", "0.28", "0.60", "0.77", "0.53", "0.31", "0.33", "0.60", "0.69", "BRISQUE:", "RankIQA:", "DeepIQA:", "RankIQ:", "PFE:", "SER-FIQ:", "FaceQnet:", "MagFace:", "SDD-FIQ:", "CR-FIQA(S):", "CR-FIQA(L):", "0.38", "0.49", "0.01", "0.45", "0.73", "0.89", "0.49", "0.66", "0.51", "0.96", "0.91"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure14-1.png",
+  "captionBoundary": {
+    "x1": 48.9640007019043,
+    "y1": 695.8525390625,
+    "x2": 563.0340576171875,
+    "y2": 701.85498046875
+  }
+}, {
+  "renderDpi": 300,
+  "name": "13",
+  "page": 20,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 53.04,
+    "y1": 103.92,
+    "x2": 540.48,
+    "y2": 239.04
+  },
+  "caption": "Fig. 13: Histogram of the cosine similarity between training samples and their class centers (CCS) and nearest negative class centers (NNCCS). Similarity values in plot 13a are obtained from ResNet-50 trained on CASIA-WebFace (R50(CASIA)) and the ones in plot 13b are obtained from ResNet-100 trained on MS1MV2 (R100(MS1MV2)). In both models/databases, the values of CCS and NNCCS vary between different samples.",
+  "imageText": ["(b)", "CCS", "NNCCS", "y", "ue", "nc", "Fr", "eq", "800000", "600000", "400000", "200000", "0", "0.00", "0.25", "0.50", "0.75", "1.00", "Cosine", "similarity", "(a)", "CCS", "NNCCS", "y", "ue", "nc", "Fr", "eq", "60000", "40000", "20000", "0", "0.2", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Cosine", "similarity"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure13-1.png",
+  "captionBoundary": {
+    "x1": 48.9639892578125,
+    "y1": 248.96554565429688,
+    "x2": 563.0341796875,
+    "y2": 290.83404541015625
+  }
+}, {
+  "renderDpi": 300,
+  "name": "4",
+  "page": 6,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 108.96,
+    "y1": 124.8,
+    "x2": 503.03999999999996,
+    "y2": 610.0799999999999
+  },
+  "caption": "Fig. 4: ERC (FNMR at FMR1e-3 vs reject) curves for all evaluated benchmarks. The proposed CR-FIQA(L) and CR-FIQA(S) are marked with solid blue and red lines, respectively. CR-FIQA leads to lower verification error, when rejecting a fraction of images, of the lowest quality, in comparison to SOTA methods (faster decaying curve) under most experimental settings.",
+  "imageText": ["BRISQUE", "RankIQA", "DeepIQA", "RankIQ", "PFE", "SER-FIQ", "FaceQnet", "MagFace", "SDD-FIQA", "CR-FIQA(S)", "(Our)", "CR-FIQA(L)", "(Our)", "Testing", "on", "IJB-C,", "FMR=1e-3", "(CurricularFace)", "R", "FN", "M", "0.08", "0.06", "0.04", "0.02", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "IJB-C,", "FMR=1e-3", "(MagFace)", "R", "FN", "M", "0.12", "0.10", "0.08", "0.06", "0.04", "0.02", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "IJB-C,", "FMR=1e-3", "(ElasticFace)", "0.01", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "IJB-C,", "FMR=1e-3", "(ArcFace)", "R", "FN", "M", "0.08", "0.06", "0.04", "0.02", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "XQLFW,", "FMR=1e-3", "(CurricularFace)", "R", "FN", "M", "1.0", "0.8", "0.6", "0.4", "0.2", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "XQLFW,", "FMR=1e-3", "(MagFace)", "R", "FN", "M", "1.0", "0.8", "0.6", "0.4", "0.2", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "XQLFW,", "FMR=1e-3", "(ElasticFace)", "R", "FN", "M", "1.0", "0.8", "0.6", "0.4", "0.2", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "XQLFW,", "FMR=1e-3", "(ArcFace)", "R", "FN", "M", "1.0", "0.8", "0.6", "0.4", "0.2", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "R", "Testing", "on", "CPLFW,", "FMR=1e-3", "(CurricularFace)", "0.0", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "FN", "M", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CPLFW,", "FMR=1e-3", "(MagFace)", "R", "FN", "M", "0.8", "0.6", "0.4", "0.2", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CPLFW,", "FMR=1e-3", "(ElasticFace)", "R", "FN", "M", "0.7", "0.6", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CPLFW,", "FMR=1e-3", "(ArcFace)", "R", "FN", "M", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CALFW,", "FMR=1e-3", "(CurricularFace)", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "0.09", "0.10", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CALFW,", "FMR=1e-3", "(MagFace)", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "0.09", "0.10", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CALFW,", "FMR=1e-3", "(ElasticFace)", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "0.09", "0.10", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CALFW,", "FMR=1e-3", "(ArcFace)", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "0.09", "0.10", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "LFW,", "FMR=1e-3", "(CurricularFace)", "R", "FN", "M", "0.012", "0.010", "0.008", "0.006", "0.004", "0.002", "0.000", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "LFW,", "FMR=1e-3", "(MagFace)", "R", "FN", "M", "0.012", "0.010", "0.008", "0.006", "0.004", "0.002", "0.000", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "LFW,", "FMR=1e-3", "(ElasticFace)", "R", "FN", "M", "0.012", "0.010", "0.008", "0.006", "0.004", "0.002", "0.000", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "LFW,", "FMR=1e-3", "(ArcFace)", "R", "FN", "M", "0.012", "0.010", "0.008", "0.006", "0.004", "0.002", "0.000", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CFP-FP,", "FMR=1e-3", "(CurricularFace)", "0.000", "0.005", "0.010", "0.015", "0.020", "0.025", "0.030", "0.035", "0.040", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CFP-FP,", "FMR=1e-3", "(MagFace)", "R", "FN", "M", "0.05", "0.04", "0.03", "0.02", "0.01", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CFP-FP,", "FMR=1e-3", "(ElasticFace)", "R", "FN", "M", "0.035", "0.030", "0.025", "0.020", "0.015", "0.010", "0.005", "0.000", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CFP-FP,", "FMR=1e-3", "(ArcFace)", "0.000", "0.005", "0.010", "0.015", "0.020", "0.025", "0.030", "0.035", "0.040", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "AgeDB-30,", "FMR=1e-3", "(CurricularFace)", "R", "FN", "M", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0.01", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "AgeDB-30,", "FMR=1e-3", "(MagFace)", "0.01", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "AgeDB-30,", "FMR=1e-3", "(ElasticFace)", "R", "FN", "M", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0.01", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "R", "Testing", "on", "AgeDB-30,", "FMR=1e-3", "(ArcFace)", "FN", "M", "0.06", "0.05", "0.04", "0.03", "0.02", "0.01", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure4-1.png",
+  "captionBoundary": {
+    "x1": 48.96396255493164,
+    "y1": 620.3755493164062,
+    "x2": 563.0340576171875,
+    "y2": 650.2890014648438
+  }
+}, {
+  "renderDpi": 300,
+  "name": "15",
+  "page": 21,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 56.16,
+    "y1": 142.32,
+    "x2": 554.16,
+    "y2": 627.84
+  },
+  "caption": "Fig. 15: Quality score distribution of the evaluation benchmarks achieved by our CR-FIQA and the SOTA methods (all normalized to have values between 0 and 1).",
+  "imageText": ["CR-FIQA(L)", "(Our)", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "8", "7", "6", "5", "4", "3", "2", "1", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0", "CR-FIQA(S)", "(Our)", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "8", "6", "4", "2", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0", "SDD-FIQA", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "5", "4", "3", "2", "1", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0", "MagFace", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "4", "3", "2", "1", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0", "FaceQNet", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "3.5", "3.0", "2.5", "2.0", "1.5", "1.0", "0.5", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0.0", "SER-FIQ", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "10", "8", "6", "4", "2", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0", "PFE", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "4", "3", "2", "1", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0", "RankIQ", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "3.0", "2.5", "2.0", "1.5", "1.0", "0.5", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0.0", "DeepIQA", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "6", "5", "4", "3", "2", "1", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0", "RankIQA", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "10", "8", "6", "4", "2", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0", "BRISQUE", "label", "Adience", "AgeDB-30", "CFP-FP", "CPLFW", "CALFW", "LFW", "XQLFW", "IJB-C", "PD", "F", "6", "5", "4", "3", "2", "1", "0.0", "0.2", "0.4", "0.6", "0.8", "1.0", "Score", "0"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure15-1.png",
+  "captionBoundary": {
+    "x1": 48.9640007019043,
+    "y1": 639.4915161132812,
+    "x2": 563.0340576171875,
+    "y2": 657.448974609375
+  }
+}, {
+  "renderDpi": 300,
+  "name": "1",
+  "page": 9,
+  "figType": "Table",
+  "regionBoundary": {
+    "x1": 311.76,
+    "y1": 544.8,
+    "x2": 563.04,
+    "y2": 578.64
+  },
+  "caption": "Table 1 of the main submission.",
+  "imageText": ["This", "section", "presents", "the", "description", "and", "license", "information", "of", "the", "used", "datasets", "in", "our", "work.", "F.", "Datasets"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Table1-1.png",
+  "captionBoundary": {
+    "x1": 311.97802734375,
+    "y1": 517.7635498046875,
+    "x2": 444.0123291015625,
+    "y2": 523.7659912109375
+  }
+}, {
+  "renderDpi": 300,
+  "name": "6",
+  "page": 13,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 123.83999999999999,
+    "y1": 70.32,
+    "x2": 485.03999999999996,
+    "y2": 674.16
+  },
+  "caption": "Fig. 6: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-3) using ArcFace and ElasticFace models on LFW, CALFW, CPLFW and XQLFW benchmarks . CR-FIQA(S) and CCS-FIQA(S) outperformed the on-top solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples). AUC values are mentioned under the plots.",
+  "imageText": ["CR-FIQA", "(On-top", "model):", "0.208", "CCS-FIQA", "(On-top", "model):", "0.2101", "CR-FIQA:", "0.2093", "CCS-FIQA:", "0.1928", "Testing", "on", "XQLFW,", "FMR=1e", "3", "(ElasticFace)", "R", "FN", "M", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.2425", "CCS-FIQA", "(On-top", "model):", "0.2448", "CR-FIQA:", "0.2377", "CCS-FIQA:", "0.2157", "Testing", "on", "XQLFW,", "FMR=1e", "3", "(ArcFace)", "R", "FN", "M", "0.6", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0526", "CCS-FIQA", "(On-top", "model):", "0.0521", "CR-FIQA:", "0.0383", "CCS-FIQA:", "0.0399", "Testing", "on", "CPLFW,", "FMR=1e", "3", "(ElasticFace)", "R", "FN", "M", "0.16", "0.14", "0.12", "0.10", "0.08", "0.06", "0.04", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0711", "CCS-FIQA", "(On-top", "model):", "0.0658", "CR-FIQA:", "0.0391", "CCS-FIQA:", "0.041", "Testing", "on", "CPLFW,", "FMR=1e", "3", "(ArcFace)", "R", "FN", "M", "0.200", "0.175", "0.150", "0.125", "0.100", "0.075", "0.050", "0.025", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0614", "CCS-FIQA", "(On-top", "model):", "0.058", "CR-FIQA:", "0.0509", "CCS-FIQA:", "0.0549", "Testing", "on", "CALFW,", "FMR=1e", "3", "(ElasticFace)", "R", "FN", "M", "0.08", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0627", "CCS-FIQA", "(On-top", "model):", "0.0598", "CR-FIQA:", "0.0521", "CCS-FIQA:", "0.0566", "Testing", "on", "CALFW,", "FMR=1e", "3", "(ArcFace)", "R", "FN", "M", "0.08", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0026", "CCS-FIQA", "(On-top", "model):", "0.002", "CR-FIQA:", "0.0015", "CCS-FIQA:", "0.0022", "Testing", "on", "LFW,", "FMR=1e", "3", "(ElasticFace)", "R", "FN", "M", "0.005", "0.004", "0.003", "0.002", "0.001", "0.000", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0027", "CCS-FIQA", "(On-top", "model):", "0.0023", "CR-FIQA:", "0.002", "CCS-FIQA:", "0.0024", "Testing", "on", "LFW,", "FMR=1e", "3", "(ArcFace)", "R", "FN", "M", "0.005", "0.004", "0.003", "0.002", "0.001", "0.000", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure6-1.png",
+  "captionBoundary": {
+    "x1": 48.9640007019043,
+    "y1": 676.3905639648438,
+    "x2": 563.0341796875,
+    "y2": 730.2140502929688
+  }
+}, {
+  "renderDpi": 300,
+  "name": "2",
+  "page": 2,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 315.12,
+    "y1": 295.2,
+    "x2": 553.1999999999999,
+    "y2": 371.28
+  },
+  "caption": "Fig. 2: ERCs showing the verification performance as FNMR at FMR 1e-3 (2a) and 1e-4 (2b) with CCS, NNCCS and CR as FIQ vs. rejection ratio. This ERC plots show the effectiveness of rejecting samples with the lowest CCS and CR on the performance.",
+  "imageText": ["(b)", "CCS", "score", "NNCCS", "score", "CR", "score", "Testing", "on", "CASIA-WebFace,", "FMR=1e-4", "R", "FN", "M", "0.125", "0.100", "0.075", "0.050", "0.025", "0", "20", "40", "60", "80", "Ratio", "of", "unconsidered", "image", "[%]", "(a)", "CCS", "score", "NNCCS", "score", "CR", "score", "Testing", "on", "CASIA-WebFace,", "FMR=1e-3", "R", "FN", "M", "0.100", "0.075", "0.050", "0.025", "0", "20", "40", "60", "80", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure2-1.png",
+  "captionBoundary": {
+    "x1": 311.9779968261719,
+    "y1": 381.2665100097656,
+    "x2": 563.0354614257812,
+    "y2": 435.0899353027344
+  }
+}, {
+  "renderDpi": 300,
+  "name": "10",
+  "page": 17,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 127.19999999999999,
+    "y1": 70.32,
+    "x2": 485.03999999999996,
+    "y2": 674.16
+  },
+  "caption": "Fig. 10: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-4) using ArcFace and ElasticFace models on LFW, CALFW, CPLFW and XQLFW benchmarks . CR-FIQA(S) and CCS-FIQA(S) outperformed the on-top solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples). AUC values are mentioned under the plots.",
+  "imageText": ["CR-FIQA", "(On-top", "model):", "0.2431", "CCS-FIQA", "(On-top", "model):", "0.2486", "CR-FIQA:", "0.2835", "CCS-FIQA:", "0.2226", "Testing", "on", "XQLFW,", "FMR=1e", "4", "(ElasticFace)", "R", "FN", "M", "0.6", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.2924", "CCS-FIQA", "(On-top", "model):", "0.2939", "CR-FIQA:", "0.274", "CCS-FIQA:", "0.2407", "Testing", "on", "XQLFW,", "FMR=1e", "4", "(ArcFace)", "R", "FN", "M", "0.7", "0.6", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0722", "CCS-FIQA", "(On-top", "model):", "0.0692", "CR-FIQA:", "0.0502", "CCS-FIQA:", "0.0523", "Testing", "on", "CPLFW,", "FMR=1e", "4", "(ElasticFace)", "0.00", "0.05", "0.10", "0.15", "0.20", "0.25", "0.30", "0.35", "0.40", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0971", "CCS-FIQA", "(On-top", "model):", "0.0915", "CR-FIQA:", "0.0567", "CCS-FIQA:", "0.0606", "Testing", "on", "CPLFW,", "FMR=1e", "4", "(ArcFace)", "R", "FN", "M", "0.25", "0.20", "0.15", "0.10", "0.05", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0628", "CCS-FIQA", "(On-top", "model):", "0.0599", "CR-FIQA:", "0.0522", "CCS-FIQA:", "0.0567", "Testing", "on", "CALFW,", "FMR=1e", "4", "(ElasticFace)", "R", "FN", "M", "0.08", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.065", "CCS-FIQA", "(On-top", "model):", "0.063", "CR-FIQA:", "0.0554", "CCS-FIQA:", "0.0608", "Testing", "on", "CALFW,", "FMR=1e", "4", "(ArcFace)", "R", "FN", "M", "0.09", "0.08", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0031", "CCS-FIQA", "(On-top", "model):", "0.0027", "CR-FIQA:", "0.0022", "CCS-FIQA:", "0.0029", "Testing", "on", "LFW,", "FMR=1e", "4", "(ElasticFace)", "R", "FN", "M", "0.005", "0.004", "0.003", "0.002", "0.001", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0031", "CCS-FIQA", "(On-top", "model):", "0.0028", "CR-FIQA:", "0.0025", "CCS-FIQA:", "0.0029", "Testing", "on", "LFW,", "FMR=1e", "4", "(ArcFace)", "R", "FN", "M", "0.0050", "0.0045", "0.0040", "0.0035", "0.0030", "0.0025", "0.0020", "0.0015", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure10-1.png",
+  "captionBoundary": {
+    "x1": 48.96397018432617,
+    "y1": 676.3905639648438,
+    "x2": 563.0341796875,
+    "y2": 730.2140502929688
+  }
+}, {
+  "renderDpi": 300,
+  "name": "16",
+  "page": 22,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 58.8,
+    "y1": 88.32,
+    "x2": 554.16,
+    "y2": 660.0
+  },
+  "caption": "Fig. 16: ERC (FNMR at FMR1e-4 vs reject) curves for ArcFace and ElasticFace on Adience, AgeDB-30 and CFP-FP benchmarks. The proposed CR-FIQA(L) and CR-FIQA(S) are marked with solid blue and red lines, respectively. CR-FIQA leads to lower verification error, when rejecting a fraction of images, of the lowest quality, in comparison to SOTA methods (faster decaying curve) under most experimental settings.",
+  "imageText": ["BRISQUE", "RankIQA", "DeepIQA", "RankIQ", "PFE", "SER-FIQ", "FaceQnet", "MagFace", "SDD-FIQA", "CR-FIQA(S)", "(Our)", "CR-FIQA(L)", "(Our)", "Testing", "on", "CFP-FP,", "FMR=1e-4", "(ElasticFace)", "R", "FN", "M", "0.04", "0.03", "0.02", "0.01", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CFP-FP,", "FMR=1e-4", "(ArcFace)", "R", "FN", "M", "0.05", "0.04", "0.03", "0.02", "0.01", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "AgeDB-30,", "FMR=1e-4", "(ElasticFace)", "R", "FN", "M", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0.01", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "AgeDB-30,", "FMR=1e-4", "(ArcFace)", "0.01", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "Adience,", "FMR=1e-4", "(ElasticFace)", "R", "FN", "M", "0.14", "0.12", "0.10", "0.08", "0.06", "0.04", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "Adience,", "FMR=1e-4", "(ArcFace)", "0.000", "0.025", "0.050", "0.075", "0.100", "0.125", "0.150", "0.175", "0.200", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure16-1.png",
+  "captionBoundary": {
+    "x1": 48.96400451660156,
+    "y1": 670.4185180664062,
+    "x2": 563.0341186523438,
+    "y2": 712.2869873046875
+  }
+}, {
+  "renderDpi": 300,
+  "name": "21",
+  "page": 27,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 58.8,
+    "y1": 181.92,
+    "x2": 554.16,
+    "y2": 566.16
+  },
+  "caption": "Fig. 21: ERC (FNMR at FMR1e-4 vs reject) curves for MagFace and CurricularFace on XQLFW and IJB-C benchmarks. The proposed CR-FIQA(L) and CR-FIQA(S) are marked with solid blue and red lines, respectively. CR-FIQA leads to lower verification error, when rejecting a fraction of images, of the lowest quality, in comparison to SOTA methods (faster decaying curve) under most experimental settings.",
+  "imageText": ["BRISQUE", "RankIQA", "DeepIQA", "RankIQ", "PFE", "SER-FIQ", "FaceQnet", "MagFace", "SDD-FIQA", "CR-FIQA(S)", "(Our)", "CR-FIQA(L)", "(Our)", "Testing", "on", "IJB-C,", "FMR=1e-4", "(CurricularFace)", "0.00", "0.02", "0.04", "0.06", "0.08", "0.10", "0.12", "0.14", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "IJB-C,", "FMR=1e-4", "(MagFace)", "R", "FN", "M", "0.20", "0.15", "0.10", "0.05", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "XQLFW,", "FMR=1e-4", "(CurricularFace)", "R", "FN", "M", "1.0", "0.8", "0.6", "0.4", "0.2", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "XQLFW,", "FMR=1e-4", "(MagFace)", "R", "FN", "M", "1.0", "0.8", "0.6", "0.4", "0.2", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure21-1.png",
+  "captionBoundary": {
+    "x1": 48.96400451660156,
+    "y1": 576.9195556640625,
+    "x2": 563.0343017578125,
+    "y2": 618.7869873046875
+  }
+}, {
+  "renderDpi": 300,
+  "name": "5",
+  "page": 12,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 125.52,
+    "y1": 142.07999999999998,
+    "x2": 485.03999999999996,
+    "y2": 594.0
+  },
+  "caption": "Fig. 5: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-3) using ArcFace and ElasticFace models on Adience, AgeDb-30 and CFP-FP benchmarks . CR-FIQA(S) and CCS-FIQA(S) outperformed the ontop solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples). AUC values are mentioned under the plots.",
+  "imageText": ["CR-FIQA", "(On-top", "model):", "0.022", "CCS-FIQA", "(On-top", "model):", "0.0211", "CR-FIQA:", "0.007", "CCS-FIQA:", "0.0082", "Testing", "on", "CFP-FP,", "FMR=1e", "3", "(ElasticFace)", "R", "FN", "M", "0.035", "0.030", "0.025", "0.020", "0.015", "0.010", "0.005", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0262", "CCS-FIQA", "(On-top", "model):", "0.0262", "CR-FIQA:", "0.009", "CCS-FIQA:", "0.0116", "Testing", "on", "CFP-FP,", "FMR=1e", "3", "(ArcFace)", "R", "FN", "M", "0.040", "0.035", "0.030", "0.025", "0.020", "0.015", "0.010", "0.005", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0243", "CCS-FIQA", "(On-top", "model):", "0.0232", "CR-FIQA:", "0.0146", "CCS-FIQA:", "0.0186", "Testing", "on", "AgeDb-30,", "FMR=1e", "3", "(ElasticFace)", "0.030", "0.035", "FN", "M", "R", "0.025", "0.020", "0.015", "0.010", "0.005", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0265", "CCS-FIQA", "(On-top", "model):", "0.0282", "CR-FIQA:", "0.0144", "CCS-FIQA:", "0.0196", "Testing", "on", "AgeDb-30,", "FMR=1e", "3", "(ArcFace)", "R", "FN", "M", "0.035", "0.030", "0.025", "0.020", "0.015", "0.010", "0.005", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0682", "CCS-FIQA", "(On-top", "model):", "0.0723", "CR-FIQA:", "0.0257", "CCS-FIQA:", "0.025", "Testing", "on", "Adience,", "FMR=1e", "3", "(ElasticFace)", "R", "FN", "M", "0.12", "0.10", "0.08", "0.06", "0.04", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0651", "CCS-FIQA", "(On-top", "model):", "0.0686", "CR-FIQA:", "0.0241", "CCS-FIQA:", "0.0235", "Testing", "on", "Adience,", "FMR=1e", "3", "(ArcFace)", "R", "FN", "M", "0.12", "0.10", "0.08", "0.06", "0.04", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure5-1.png",
+  "captionBoundary": {
+    "x1": 48.9640007019043,
+    "y1": 604.592529296875,
+    "x2": 563.0341796875,
+    "y2": 658.416015625
+  }
+}, {
+  "renderDpi": 300,
+  "name": "3",
+  "page": 3,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 80.88,
+    "y1": 138.96,
+    "x2": 534.0,
+    "y2": 165.35999999999999
+  },
+  "caption": "Fig. 3: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-3). CR-FIQA(S) and CCSFIQA(S) outperformed the on-top solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples).",
+  "imageText": ["(d)", "CR-FIQA:", "0.009", "CCS-FIQA:", "0.0116", "CR-FIQA", "(On-top", "model):", "0.0262", "CCS-FIQA", "(On-top", "model):", "0.0262", "(c)", "CR-FIQA:", "0.0521", "CCS-FIQA:", "0.0566", "CR-FIQA", "(On-top", "model):", "0.0627", "CCS-FIQA", "(On-top", "model):", "0.0598", "(b)", "CR-FIQA:", "0.0144", "CCS-FIQA:", "0.0196", "CR-FIQA", "(On-top", "model):", "0.0265", "CCS-FIQA", "(On-top", "model):", "0.0282", "(a)", "CR-FIQA:", "0.0241", "CCS-FIQA:", "0.0235", "CR-FIQA", "(On-top", "model):", "0.0651", "CCS-FIQA", "(On-top", "model):", "0.0686"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure3-1.png",
+  "captionBoundary": {
+    "x1": 48.964019775390625,
+    "y1": 175.15054321289062,
+    "x2": 563.0341796875,
+    "y2": 217.01904296875
+  }
+}, {
+  "renderDpi": 300,
+  "name": "11",
+  "page": 18,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 127.19999999999999,
+    "y1": 142.07999999999998,
+    "x2": 485.03999999999996,
+    "y2": 594.0
+  },
+  "caption": "Fig. 11: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-4) using MagFace and CurricularFace on Adience, AgeDb-30 and CFP-FP benchmarks . CR-FIQA(S) and CCS-FIQA(S) outperformed the on-top solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples). AUC values are mentioned under the plots.",
+  "imageText": ["CR-FIQA", "(On-top", "model):", "0.0414", "CCS-FIQA", "(On-top", "model):", "0.0425", "CR-FIQA:", "0.0148", "CCS-FIQA:", "0.0168", "Testing", "on", "CFP-FP,", "FMR=1e", "4", "(CurricularFace)", "R", "FN", "M", "0.06", "0.05", "0.04", "0.03", "0.02", "0.01", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0438", "CCS-FIQA", "(On-top", "model):", "0.0369", "CR-FIQA:", "0.0121", "CCS-FIQA:", "0.0179", "Testing", "on", "CFP-FP,", "FMR=1e", "4", "(MagFace)", "0.01", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0316", "CCS-FIQA", "(On-top", "model):", "0.0288", "CR-FIQA:", "0.0198", "CCS-FIQA:", "0.0236", "Testing", "on", "AgeDb-30,", "FMR=1e", "4", "(CurricularFace)", "0.04", "0.05", "FN", "M", "R", "0.03", "0.02", "0.01", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0454", "CCS-FIQA", "(On-top", "model):", "0.0491", "CR-FIQA:", "0.0234", "CCS-FIQA:", "0.0377", "Testing", "on", "AgeDb-30,", "FMR=1e", "4", "(MagFace)", "0.00", "0.01", "0.02", "0.03", "0.04", "0.05", "0.06", "0.07", "0.08", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.123", "CCS-FIQA", "(On-top", "model):", "0.1251", "CR-FIQA:", "0.0446", "CCS-FIQA:", "0.0448", "Testing", "on", "Adience,", "FMR=1e", "4", "(CurricularFace)", "R", "FN", "M", "0.175", "0.150", "0.125", "0.100", "0.075", "0.050", "0.025", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.1648", "CCS-FIQA", "(On-top", "model):", "0.1732", "CR-FIQA:", "0.0507", "CCS-FIQA:", "0.0501", "Testing", "on", "Adience,", "FMR=1e", "4", "(MagFace)", "R", "FN", "M", "0.30", "0.25", "0.20", "0.15", "0.10", "0.05", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure11-1.png",
+  "captionBoundary": {
+    "x1": 48.9640007019043,
+    "y1": 604.592529296875,
+    "x2": 563.0341186523438,
+    "y2": 658.416015625
+  }
+}, {
+  "renderDpi": 300,
+  "name": "9",
+  "page": 16,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 127.19999999999999,
+    "y1": 142.07999999999998,
+    "x2": 485.03999999999996,
+    "y2": 594.0
+  },
+  "caption": "Fig. 9: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-4) using ArcFace and ElasticFace models on Adience, AgeDb-30 and CFP-FP benchmarks . CR-FIQA(S) and CCS-FIQA(S) outperformed the ontop solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples). AUC values are mentioned under the plots.",
+  "imageText": ["CR-FIQA", "(On-top", "model):", "0.0288", "CCS-FIQA", "(On-top", "model):", "0.0284", "CR-FIQA:", "0.0096", "CCS-FIQA:", "0.0105", "Testing", "on", "CFP-FP,", "FMR=1e", "4", "(ElasticFace)", "R", "FN", "M", "0.04", "0.03", "0.02", "0.01", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0364", "CCS-FIQA", "(On-top", "model):", "0.0338", "CR-FIQA:", "0.0145", "CCS-FIQA:", "0.0169", "Testing", "on", "CFP-FP,", "FMR=1e", "4", "(ArcFace)", "R", "FN", "M", "0.05", "0.04", "0.03", "0.02", "0.01", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0262", "CCS-FIQA", "(On-top", "model):", "0.0257", "CR-FIQA:", "0.016", "CCS-FIQA:", "0.0206", "Testing", "on", "AgeDb-30,", "FMR=1e", "4", "(ElasticFace)", "0.035", "0.040", "FN", "M", "R", "0.030", "0.025", "0.020", "0.015", "0.010", "0.005", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0346", "CCS-FIQA", "(On-top", "model):", "0.0367", "CR-FIQA:", "0.0187", "CCS-FIQA:", "0.0251", "Testing", "on", "AgeDb-30,", "FMR=1e", "4", "(ArcFace)", "R", "FN", "M", "0.06", "0.05", "0.04", "0.03", "0.02", "0.01", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.1383", "CCS-FIQA", "(On-top", "model):", "0.1509", "CR-FIQA:", "0.0465", "CCS-FIQA:", "0.0457", "Testing", "on", "Adience,", "FMR=1e", "4", "(ElasticFace)", "R", "FN", "M", "0.25", "0.20", "0.15", "0.10", "0.05", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.1363", "CCS-FIQA", "(On-top", "model):", "0.1409", "CR-FIQA:", "0.0517", "CCS-FIQA:", "0.052", "Testing", "on", "Adience,", "FMR=1e", "4", "(ArcFace)", "0.025", "0.050", "0.075", "0.100", "0.125", "0.150", "0.175", "0.200", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure9-1.png",
+  "captionBoundary": {
+    "x1": 48.96403121948242,
+    "y1": 604.592529296875,
+    "x2": 563.0341796875,
+    "y2": 658.416015625
+  }
+}, {
+  "renderDpi": 300,
+  "name": "III",
+  "page": 11,
+  "figType": "Table",
+  "regionBoundary": {
+    "x1": 48.0,
+    "y1": 51.839999999999996,
+    "x2": 564.0,
+    "y2": 193.2
+  },
+  "caption": "TABLE III",
+  "imageText": ["Method", "Code", "link", "License", "SER-FIQA", "[39]", "https://github.com/pterhoer/FaceImageQuality", "Attribution-NonCommercial-ShareAlike", "4.0", "International", "(CC", "BY-NC-SA", "4.0)", "licensehttps://github.com/pterhoer/FaceImageQuality/blob/master/README.md", "FaceQnet", "[16]", "https://github.com/uam-biometrics/FaceQnet", "no", "speciﬁc", "license", "provided", "by", "the", "authors", "MagFace", "[31]", "https://github.com/IrvingMeng/MagFace", "Apache", "License", "2.0https://github.com/IrvingMeng/MagFace/blob/main/LICENSE", "SDD-FIQA", "[35]", "https://github.com/Tencent/TFace/tree/quality", "Extension", "of", "Apache", "License", "Version", "2.0https://github.com/Tencent/TFace/blob/master/License.txt", "rankIQ", "[5]", "https://jschenthu.weebly.com/projects.html", "This", "toolbox", "is", "made", "available", "for", "research", "purpose", "only", "as", "statedin", "README.md", "of", "code", "webpage", "BRISQUE", "[32]", "http://live.ece.utexas.edu/research/quality/BRISQUE", "release.zip", "Free", "usage", "is", "stated", "in", "the", "readme", "ﬁle", "contained", "in", "the", "project", "PFE", "[38]", "https://github.com/seasonSH/Probabilistic-Face-Embeddings", "MIT", "Licensehttps://github.com/dmaniry/deepIQA/blob/master/LICENSE", "rankIQA", "[28]", "https://github.com/xialeiliu/RankIQA", "MIT", "Licensehttps://github.com/xialeiliu/RankIQA/blob/master/LICENSE", "DeepIQA", "[3]", "https://github.com/dmaniry/deepIQA", "MIT", "Licensehttps://github.com/dmaniry/deepIQA/blob/master/LICENSE"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-TableIII-1.png",
+  "captionBoundary": {
+    "x1": 283.6940002441406,
+    "y1": 200.53054809570312,
+    "x2": 328.3065185546875,
+    "y2": 206.53302001953125
+  }
+}, {
+  "renderDpi": 300,
+  "name": "20",
+  "page": 26,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 58.8,
+    "y1": 181.92,
+    "x2": 554.16,
+    "y2": 566.16
+  },
+  "caption": "Fig. 20: ERC (FNMR at FMR1e-4 vs reject) curves for ArcFace and ElasticFace on XQLFW and IJB-C benchmarks. The proposed CR-FIQA(L) and CR-FIQA(S) are marked with solid blue and red lines, respectively. CR-FIQA leads to lower verification error, when rejecting a fraction of images, of the lowest quality, in comparison to SOTA methods (faster decaying curve) under most experimental settings.",
+  "imageText": ["BRISQUE", "RankIQA", "DeepIQA", "RankIQ", "PFE", "SER-FIQ", "FaceQnet", "MagFace", "SDD-FIQA", "CR-FIQA(S)", "(Our)", "CR-FIQA(L)", "(Our)", "Testing", "on", "IJB-C,", "FMR=1e-4", "(ElasticFace)", "0.00", "0.02", "0.04", "0.06", "0.08", "0.10", "0.12", "0.14", "0.16", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "IJB-C,", "FMR=1e-4", "(ArcFace)", "R", "FN", "M", "0.175", "0.150", "0.125", "0.100", "0.075", "0.050", "0.025", "0.000", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "XQLFW,", "FMR=1e-4", "(ElasticFace)", "R", "FN", "M", "1.0", "0.8", "0.6", "0.4", "0.2", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "XQLFW,", "FMR=1e-4", "(ArcFace)", "R", "FN", "M", "1.0", "0.8", "0.6", "0.4", "0.2", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure20-1.png",
+  "captionBoundary": {
+    "x1": 48.96400451660156,
+    "y1": 576.9195556640625,
+    "x2": 563.0343017578125,
+    "y2": 618.7869873046875
+  }
+}, {
+  "renderDpi": 300,
+  "name": "17",
+  "page": 23,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 56.879999999999995,
+    "y1": 88.32,
+    "x2": 555.36,
+    "y2": 660.0
+  },
+  "caption": "Fig. 17: ERC (FNMR at FMR1e-4 vs reject) curves for MagFace and CurricularFace on Adience, AgeDB-30 and CFP-FP benchmarks. The proposed CR-FIQA(L) and CR-FIQA(S) are marked with solid blue and red lines, respectively. CR-FIQA leads to lower verification error, when rejecting a fraction of images, of the lowest quality, in comparison to SOTA methods (faster decaying curve) under most experimental settings.",
+  "imageText": ["BRISQUE", "RankIQA", "DeepIQA", "RankIQ", "PFE", "SER-FIQ", "FaceQnet", "MagFace", "SDD-FIQA", "CR-FIQA(S)", "(Our)", "CR-FIQA(L)", "(Our)", "Testing", "on", "CFP-FP,", "FMR=1e-4", "(CurricularFace)", "R", "FN", "M", "0.05", "0.04", "0.03", "0.02", "0.01", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "CFP-FP,", "FMR=1e-4", "(MagFace)", "R", "FN", "M", "0.08", "0.06", "0.04", "0.02", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "AgeDB-30,", "FMR=1e-4", "(CurricularFace)", "0.06", "0.07", "FN", "M", "R", "0.05", "0.04", "0.03", "0.02", "0.01", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "AgeDB-30,", "FMR=1e-4", "(MagFace)", "R", "FN", "M", "0.10", "0.08", "0.06", "0.04", "0.02", "0.00", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "Adience,", "FMR=1e-4", "(CurricularFace)", "R", "FN", "M", "0.14", "0.12", "0.10", "0.08", "0.06", "0.04", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "Testing", "on", "Adience,", "FMR=1e-4", "(MagFace)", "0.000", "0.025", "0.050", "0.075", "0.100", "0.125", "0.150", "0.175", "0.200", "FN", "M", "R", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure17-1.png",
+  "captionBoundary": {
+    "x1": 48.96400451660156,
+    "y1": 670.4185180664062,
+    "x2": 563.0341186523438,
+    "y2": 712.2869873046875
+  }
+}, {
+  "renderDpi": 300,
+  "name": "12",
+  "page": 19,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 127.19999999999999,
+    "y1": 70.32,
+    "x2": 485.03999999999996,
+    "y2": 674.16
+  },
+  "caption": "Fig. 12: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-4) using MagFace and CurricularFace on LFW, CALFW, CPLFW and XQLFW benchmarks . CR-FIQA(S) and CCS-FIQA(S) outperformed the ontop solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples). AUC values are mentioned under the plots.",
+  "imageText": ["CR-FIQA", "(On-top", "model):", "0.262", "CCS-FIQA", "(On-top", "model):", "0.2631", "CR-FIQA:", "0.247", "CCS-FIQA:", "0.2176", "Testing", "on", "XQLFW,", "FMR=1e", "4", "(CurricularFace)", "R", "FN", "M", "0.6", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.3315", "CCS-FIQA", "(On-top", "model):", "0.3328", "CR-FIQA:", "0.3336", "CCS-FIQA:", "0.3046", "Testing", "on", "XQLFW,", "FMR=1e", "4", "(MagFace)", "R", "FN", "M", "0.7", "0.6", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0712", "CCS-FIQA", "(On-top", "model):", "0.0724", "CR-FIQA:", "0.0501", "CCS-FIQA:", "0.0538", "Testing", "on", "CPLFW,", "FMR=1e", "4", "(CurricularFace)", "R", "FN", "M", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.1327", "CCS-FIQA", "(On-top", "model):", "0.1213", "CR-FIQA:", "0.084", "CCS-FIQA:", "0.085", "Testing", "on", "CPLFW,", "FMR=1e", "4", "(MagFace)", "R", "FN", "M", "0.6", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0642", "CCS-FIQA", "(On-top", "model):", "0.0621", "CR-FIQA:", "0.0534", "CCS-FIQA:", "0.0586", "Testing", "on", "CALFW,", "FMR=1e", "4", "(CurricularFace)", "R", "FN", "M", "0.08", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0637", "CCS-FIQA", "(On-top", "model):", "0.0607", "CR-FIQA:", "0.0528", "CCS-FIQA:", "0.0571", "Testing", "on", "CALFW,", "FMR=1e", "4", "(MagFace)", "R", "FN", "M", "0.08", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0031", "CCS-FIQA", "(On-top", "model):", "0.0028", "CR-FIQA:", "0.0025", "CCS-FIQA:", "0.0029", "Testing", "on", "LFW,", "FMR=1e", "4", "(CurricularFace)", "R", "FN", "M", "0.0050", "0.0045", "0.0040", "0.0035", "0.0030", "0.0025", "0.0020", "0.0015", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0035", "CCS-FIQA", "(On-top", "model):", "0.0033", "CR-FIQA:", "0.0028", "CCS-FIQA:", "0.003", "Testing", "on", "LFW,", "FMR=1e", "4", "(MagFace)", "R", "FN", "M", "0.0050", "0.0045", "0.0040", "0.0035", "0.0030", "0.0025", "0.0020", "0.0015", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure12-1.png",
+  "captionBoundary": {
+    "x1": 48.9640007019043,
+    "y1": 676.3905639648438,
+    "x2": 563.0341796875,
+    "y2": 730.2140502929688
+  }
+}, {
+  "renderDpi": 300,
+  "name": "8",
+  "page": 15,
+  "figType": "Figure",
+  "regionBoundary": {
+    "x1": 123.83999999999999,
+    "y1": 70.32,
+    "x2": 485.03999999999996,
+    "y2": 674.16
+  },
+  "caption": "Fig. 8: ERC comparison between CR-FIQA(S), CCS-FIQA(S), CR-FIQA(S) (On top) and CCS-FIQA(S) (On top). The plots show the effect of rejecting samples of lowest quality, on the verification error (FNMR at FMR1e-3) using MagFace and CurricularFace models on LFW, CALFW, CPLFW and XQLFW benchmarks . CR-FIQA(S) and CCS-FIQA(S) outperformed the on-top solutions, and CR-FIQA(S) performs generally better than CCS-FIQA(S) (curve decays faster with more rejected samples). AUC values are mentioned under the plots.",
+  "imageText": ["CR-FIQA", "(On-top", "model):", "0.2059", "CCS-FIQA", "(On-top", "model):", "0.2072", "CR-FIQA:", "0.2101", "CCS-FIQA:", "0.186", "Testing", "on", "XQLFW,", "FMR=1e", "3", "(CurricularFace)", "R", "FN", "M", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.2831", "CCS-FIQA", "(On-top", "model):", "0.2824", "CR-FIQA:", "0.267", "CCS-FIQA:", "0.249", "Testing", "on", "XQLFW,", "FMR=1e", "3", "(MagFace)", "R", "FN", "M", "0.6", "0.5", "0.4", "0.3", "0.2", "0.1", "0.0", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0459", "CCS-FIQA", "(On-top", "model):", "0.0476", "CR-FIQA:", "0.034", "CCS-FIQA:", "0.0365", "Testing", "on", "CPLFW,", "FMR=1e", "3", "(CurricularFace)", "R", "FN", "M", "0.14", "0.12", "0.10", "0.08", "0.06", "0.04", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0716", "CCS-FIQA", "(On-top", "model):", "0.0635", "CR-FIQA:", "0.0409", "CCS-FIQA:", "0.0436", "Testing", "on", "CPLFW,", "FMR=1e", "3", "(MagFace)", "R", "FN", "M", "0.20", "0.15", "0.10", "0.05", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0617", "CCS-FIQA", "(On-top", "model):", "0.0591", "CR-FIQA:", "0.0513", "CCS-FIQA:", "0.056", "Testing", "on", "CALFW,", "FMR=1e", "3", "(CurricularFace)", "R", "FN", "M", "0.08", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0621", "CCS-FIQA", "(On-top", "model):", "0.0586", "CR-FIQA:", "0.0516", "CCS-FIQA:", "0.0561", "Testing", "on", "CALFW,", "FMR=1e", "3", "(MagFace)", "R", "FN", "M", "0.08", "0.07", "0.06", "0.05", "0.04", "0.03", "0.02", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0027", "CCS-FIQA", "(On-top", "model):", "0.0023", "CR-FIQA:", "0.002", "CCS-FIQA:", "0.0024", "Testing", "on", "LFW,", "FMR=1e", "3", "(CurricularFace)", "R", "FN", "M", "0.005", "0.004", "0.003", "0.002", "0.001", "0.000", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]", "CR-FIQA", "(On-top", "model):", "0.0028", "CCS-FIQA", "(On-top", "model):", "0.0025", "CR-FIQA:", "0.002", "CCS-FIQA:", "0.0024", "Testing", "on", "LFW,", "FMR=1e", "3", "(MagFace)", "R", "FN", "M", "0.005", "0.004", "0.003", "0.002", "0.001", "0.000", "0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "Ratio", "of", "unconsidered", "image", "[%]"],
+  "renderURL": "/home/cat/Desktop/TranslationPDF/resources/out/test8/figure/figures/test8-Figure8-1.png",
+  "captionBoundary": {
+    "x1": 48.9640007019043,
+    "y1": 676.3905639648438,
+    "x2": 563.0341186523438,
+    "y2": 730.2140502929688
+  }
+}]
