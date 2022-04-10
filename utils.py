@@ -1,4 +1,4 @@
-import os
+
 #[(1,33.2,44.3,567.5,34), (), (), ...]
 def deter_region(coors):
     for num in range(len(coors)):

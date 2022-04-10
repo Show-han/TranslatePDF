@@ -109,8 +109,18 @@ def parse_abstract(article, parse_sentence = True):
                 "sentence_list": stc_list
             })
         else:
-            p_coor = utils.deter_region(p["coords"].split(";"))
-            p_text = str(p.string)
+            sentences = p.find_all("s")
+            flag = True
+            p_coor = ""
+            p_text = ""
+            for s in sentences:
+                if flag:
+                    p_coor += (s["coords"])
+                else:
+                    p_coor += (";" + s["coords"])
+                p_text += str(s.strings.__next__())
+            print(p_coor.split(";"))
+            p_coor = utils.deter_region(p_coor.split(";"))
             abstract_list.append({
                 "paragraph_coor": p_coor,
                 "paragraph_text": p_text
@@ -123,7 +133,7 @@ def references_region(article):
     references = references.find_all("biblstruct") if references is not None else []
     coors = []
     for ref in references:
-        ref_coors = ref.attrs["coords"].split(";")
+        ref_coors = ref["coords"].split(";")
         ref_coors = utils.deter_region(ref_coors)
         coors.append({
             "xml:id": ref['xml:id'],
@@ -231,8 +241,12 @@ def parse_sections(article, parse_sentence = True):
     divs = article_text.find_all("div", attrs={"xmlns": "http://www.tei-c.org/ns/1.0"})
     sections = []
     for div in divs:
-        heading = str(div.head.strings.__next__())
-        head_coors = utils.deter_region(div.head["coords"].split(";"))
+        if div.head != None:
+            heading = str(div.head.strings.__next__())
+            head_coors = utils.deter_region(div.head["coords"].split(";"))
+        else:
+            heading = ""
+            head_coors = [0,0,0,0,0]
         paragraphs = div.find_all("p")
         para_list = []
         for p in paragraphs:
@@ -250,8 +264,17 @@ def parse_sections(article, parse_sentence = True):
                     "sentence_list": stc_list
                 })
             else:
-                p_coor = utils.deter_region(p["coords"].split(";"))
-                p_text = str(p.string)
+                sentences = p.find_all("s")
+                p_coor = ""
+                p_text = ""
+                flag = True
+                for s in sentences:
+                    if flag:
+                        p_coor += (s["coords"])
+                    else:
+                        p_coor += (";" + s["coords"])
+                    p_text += str(s.strings.__next__())
+                p_coor = utils.deter_region(p_coor.split(";"))
                 para_list.append({
                     "paragraph_coor": p_coor,
                     "paragraph_text": p_text

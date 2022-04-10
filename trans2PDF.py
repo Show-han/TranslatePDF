@@ -64,8 +64,9 @@ def reference_reader(
         os.makedirs(ref_path)
     ref_list = func.references_region(article)
     for ref in ref_list:
-        page = pdf.pages[int(ref[0]) - 1]
-        img = page.crop((ref[1], ref[2], ref[3], ref[4])).to_image(resolution=500)
+        bbox = ref["ref_coor"]
+        page = pdf.pages[int(bbox[0]) - 1]
+        img = page.crop((bbox[1], bbox[2], bbox[3], bbox[4])).to_image(resolution=500)
         out_path = os.path.join(ref_path, ref["xml:id"] + ".png")
         img.save(out_path)
     return ref_path, ref_list
@@ -116,9 +117,11 @@ def pdf_regenerator(
 
 
 '''
-Cannot turn the parse_sentence to False right now! 
-Since the grobid don't provide coords to each paragraph, program will raise a KeyError exception.
+If you turn parse_sentence to False, 
+It doesn't mean grobid server would process the file without args: parse_sentence
+Since the grobid don't provide coords to each paragraph,
 The location information of the body of the article can only be obtained by sentences.
+It just means the program will generate a larger fitz.Rect concludes all sentences of a paragraph
 '''
 def trans2PDF(
     pdf_path: str,
@@ -126,11 +129,11 @@ def trans2PDF(
     font_url: str = os.path.join(DIR_PATH, "resources", "kaiti_GB2312", "楷体_GB2312.ttf"),
     title_fontsize: int = 23,
     author_fontsize: int = 12,
-    content_fontsize: int = 14,
-    section_head_fontsize: int = 17,
+    content_fontsize: int = 10,
+    section_head_fontsize: int = 15,
     parse_sentence: bool = True
 ):
-    article = func.parse_pdf(pdf_path, parse_sentence=parse_sentence)
+    article = func.parse_pdf(pdf_path, parse_sentence=True)
     title = func.parse_title(article)
     author = func.parse_authors(article)
     #date = func.parse_date(article)
