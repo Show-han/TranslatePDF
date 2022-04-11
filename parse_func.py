@@ -26,6 +26,7 @@ def parse_pdf(
     config_path: str = os.path.join(DIR_PATH, "resources", "config.json"),
     time_limit = 10
 ):
+    print("Parsing the file into XML......")
     if os.path.isfile(pdf_path):
         pdf_name, extension = os.path.splitext(os.path.basename(pdf_path))
         #print(pdf_name)
@@ -63,24 +64,30 @@ def parse_pdf(
 
 
 def parse_title(article):
+    print("Parsing the title......")
     title = article.find("titleStmt").find("title")
     return title.string
 
 def parse_authors(article):
-    author_names = article.find("sourceDesc").find_all("persname")
+    print("Parsing the authors......")
+    author_names = article.find("sourceDesc").find_all("persName")
     authors = []
+    #print("______debug______")
     for author in author_names:
         firstname = author.find("forename", {"type": "first"})
-        firstname = firstname.text.strip() if firstname is not None else ""
+        firstname = str(firstname.string) if firstname is not None else ""
         middlename = author.find("forename", {"type": "middle"})
-        middlename = middlename.text.strip() if middlename is not None else ""
+        middlename = str(middlename.string) if middlename is not None else ""
         lastname = author.find("surname")
-        lastname = lastname.text.strip() if lastname is not None else ""
+        lastname = str(lastname.string) if lastname is not None else ""
         if middlename != "":
+            #print("fullname:" + firstname + " " + middlename + " " + lastname)
             authors.append(firstname + " " + middlename + " " + lastname)
         else:
+            #print("fullname:" + firstname + " " + lastname)
             authors.append(firstname + " " + lastname)
     authors = "; ".join(authors)
+    #print("______debug______" + authors)
     return authors
 
 
@@ -91,6 +98,7 @@ def parse_date(article):
     return year
 
 def parse_abstract(article, parse_sentence = True):
+    print("Parsing the abstract......")
     div = article.find("abstract")
     abstract_list = []
     paragraphs = div.find_all("p")
@@ -119,7 +127,6 @@ def parse_abstract(article, parse_sentence = True):
                 else:
                     p_coor += (";" + s["coords"])
                 p_text += str(s.strings.__next__())
-            print(p_coor.split(";"))
             p_coor = utils.deter_region(p_coor.split(";"))
             abstract_list.append({
                 "paragraph_coor": p_coor,
@@ -129,8 +136,9 @@ def parse_abstract(article, parse_sentence = True):
 
 
 def references_region(article):
+    print("Parsing the references......")
     references = article.find("text").find("div", attrs={"type": "references"})
-    references = references.find_all("biblstruct") if references is not None else []
+    references = references.find_all("biblStruct") if references is not None else []
     coors = []
     for ref in references:
         ref_coors = ref["coords"].split(";")
@@ -143,6 +151,7 @@ def references_region(article):
 
 
 def parse_figure_caption(article):
+    print("Parsing figure captions......")
     figures_list = []
     figures = article.find_all("figure")
     for figure in figures:
@@ -175,6 +184,7 @@ def parse_figures(
     jar_path: str = PDF_FIGURES_JAR_PATH,
     resolution: int = 300,
 ):
+    print("Parsing and saving figures......")
     if os.path.isfile(pdf_path):
         pdf_name, extension = os.path.splitext(os.path.basename(pdf_path))
         if extension != ".pdf":
@@ -218,25 +228,23 @@ def parse_figures(
     return False
 
 def parse_formula(article):
-    """
-        Parse list of formulas from a given BeautifulSoup of an article
-    """
+    print("Parsing the formulas......")
     formulas_list = []
     formulas = article.find_all("formula")
     for formula in formulas:
         formula_type = formula.attrs.get("type") or ""
-        formula_id = formula.attrs["xml:id"] or ""
-        formula_coor = formula.attrs["coords"] or ""
-        formulas_list.append(
-            {
-                "formula_type": formula_type,
-                "formula_id": formula_id,
-                "formula_coor": formula_coor,
-            }
-        )
+        formula_id = formula["xml:id"] or ""
+        formula_coor = formula["coords"].split(";") or ""
+        formula_coor = utils.deter_region(formula_coor)
+        formulas_list.append({
+            "formula_type": formula_type,
+            "formula_id": formula_id,
+            "formula_coor": formula_coor,
+        })
     return formulas_list
 
-def parse_sections(article, parse_sentence = True):
+def parse_sections(article, parse_sentence = True, MAX_DIFF = 300):
+    print("Parsing the sections......")
     article_text = article.find("text")
     divs = article_text.find_all("div", attrs={"xmlns": "http://www.tei-c.org/ns/1.0"})
     sections = []
@@ -269,11 +277,44 @@ def parse_sections(article, parse_sentence = True):
                 p_text = ""
                 flag = True
                 for s in sentences:
-                    if flag:
-                        p_coor += (s["coords"])
+                    s_coors = s["coords"].split(';')
+                    temp_coor = []
+                    for s_coor in s_coors:
+                        l = []
+                        l.append(s_coor)
+                        temp_coor.append(utils.deter_region(l))
+                    # temp_coor = [[int, x0, y0, x1, y1], [], [], ...]
+                    if(len(temp_coor) > 1):
+                        page_diff = max(int(temp_coor[i+1][0] - temp_coor[i][0]) for i in range(len(temp_coor)-1))
+                        # page_diff >= 1 means the sentence goes across the page
+                        diff = max((temp_coor[i][2] - temp_coor[i+1][4]) for i in range(len(temp_coor)-1))
+                        # the largest difference between sentence pair's y coords
                     else:
-                        p_coor += (";" + s["coords"])
-                    p_text += str(s.strings.__next__())
+                        page_diff = 0
+                        diff = 0
+                    # diff > MAX_DIFF means the sentence goes across the column
+                    if page_diff >= 1 or diff > MAX_DIFF:
+                        if p_coor == "":
+                            p_coor += s_coors[0]
+                        p_coor = utils.deter_region(p_coor.split(";"))
+                        p_text += str(s.strings.__next__())
+                        para_list.append({
+                            "paragraph_coor": p_coor,
+                            "paragraph_text": p_text
+                        })
+                        p_coor = ""
+                        p_text = ""
+                        flag = True
+                        continue
+                    else:
+                        s_coor = ",".join(map(str, utils.deter_region(s_coors)))
+                        if flag:
+                            p_coor += s_coor
+                            flag = False
+                        else:
+                            p_coor += (";" + s_coor)
+                        p_text += str(s.strings.__next__())
+                flag = True
                 p_coor = utils.deter_region(p_coor.split(";"))
                 para_list.append({
                     "paragraph_coor": p_coor,
