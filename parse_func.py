@@ -307,14 +307,12 @@ def parse_sections(article, parse_sentence = True, MAX_DIFF = 300):
                         flag = True
                         continue
                     else:
-                        s_coor = ",".join(map(str, utils.deter_region(s_coors)))
                         if flag:
-                            p_coor += s_coor
+                            p_coor += s["coords"]
                             flag = False
                         else:
-                            p_coor += (";" + s_coor)
+                            p_coor += (";" + s["coords"])
                         p_text += str(s.strings.__next__())
-                flag = True
                 p_coor = utils.deter_region(p_coor.split(";"))
                 para_list.append({
                     "paragraph_coor": p_coor,

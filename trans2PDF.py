@@ -243,7 +243,7 @@ def trans2pdf(
         text = trans.youdaoTranslate(text, 0)
         new_pdf[page_num].insert_textbox(r, text, fontsize=content_fontsize, fontfile=font_url, fontname="楷体_GB2312")
 
-    sections = func.parse_sections(article, parse_sentence=parse_sentence, MAX_DIFF=0.5*(bound[3]-bound[1]))
+    sections = func.parse_sections(article, parse_sentence=parse_sentence, MAX_DIFF=0.35*(bound[3]-bound[1]))
 
     # translate section titles
     print("translating section titles")
