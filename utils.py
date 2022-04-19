@@ -1,6 +1,8 @@
 
 #[(1,33.2,44.3,567.5,34), (), (), ...]
 def deter_region(coors):
+    if not coors:
+        return [0, 0, 0, 0, 0]
     for num in range(len(coors)):
         coors[num] = coors[num].split(",")
         for i in range(5):

@@ -275,7 +275,6 @@ def parse_sections(article, parse_sentence = True, MAX_DIFF = 300):
                 sentences = p.find_all("s")
                 p_coor = ""
                 p_text = ""
-                flag = True
                 for s in sentences:
                     s_coors = s["coords"].split(';')
                     temp_coor = []
@@ -284,7 +283,7 @@ def parse_sections(article, parse_sentence = True, MAX_DIFF = 300):
                         l.append(s_coor)
                         temp_coor.append(utils.deter_region(l))
                     # temp_coor = [[int, x0, y0, x1, y1], [], [], ...]
-                    if(len(temp_coor) > 1):
+                    if len(temp_coor) > 1:
                         page_diff = max(int(temp_coor[i+1][0] - temp_coor[i][0]) for i in range(len(temp_coor)-1))
                         # page_diff >= 1 means the sentence goes across the page
                         diff = max((temp_coor[i][2] - temp_coor[i+1][4]) for i in range(len(temp_coor)-1))
@@ -296,7 +295,10 @@ def parse_sections(article, parse_sentence = True, MAX_DIFF = 300):
                     if page_diff >= 1 or diff > MAX_DIFF:
                         if p_coor == "":
                             p_coor += s_coors[0]
-                        p_coor = utils.deter_region(p_coor.split(";"))
+                        p_coor = p_coor.split(";")
+                        if "" in p_coor:
+                            p_coor.remove("")
+                        p_coor = utils.deter_region(p_coor)
                         p_text += str(s.strings.__next__())
                         para_list.append({
                             "paragraph_coor": p_coor,
@@ -304,16 +306,14 @@ def parse_sections(article, parse_sentence = True, MAX_DIFF = 300):
                         })
                         p_coor = ""
                         p_text = ""
-                        flag = True
                         continue
                     else:
-                        if flag:
-                            p_coor += s["coords"]
-                            flag = False
-                        else:
-                            p_coor += (";" + s["coords"])
+                        p_coor += (";" + s["coords"])
                         p_text += str(s.strings.__next__())
-                p_coor = utils.deter_region(p_coor.split(";"))
+                p_coor = p_coor.split(";")
+                if "" in p_coor:
+                    p_coor.remove("")
+                p_coor = utils.deter_region(p_coor)
                 para_list.append({
                     "paragraph_coor": p_coor,
                     "paragraph_text": p_text

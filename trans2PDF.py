@@ -155,11 +155,11 @@ def pdf_regenerator(
 def trans2pdf(
         pdf_path: str,
         root_path: str = os.path.join(DIR_PATH, "resources", "out"),
-        font_url: str = os.path.join(DIR_PATH, "resources", "kaiti_GB2312", "楷体_GB2312.ttf"),
+        font_url: str = os.path.join(DIR_PATH, "resources", "song", "song.ttf"),
         title_fontsize: int = 23,
         author_fontsize: int = 12,
-        content_fontsize: int = 8,
-        section_head_fontsize: int = 10,
+        content_fontsize: int = 9,
+        section_head_fontsize: int = 11,
         parse_sentence: bool = True
 ):
     """
@@ -188,11 +188,11 @@ def trans2pdf(
     for i in range(len(titles)):
         r = fitz.Rect(0, i*title_height, bound[2], (i+1)*title_height)
         text = trans.youdaoTranslate(titles[i], 0)
-        new_pdf[0].insert_textbox(r, text, fontsize=15, fontfile=font_url, fontname="楷体_GB2312")
+        new_pdf[0].insert_textbox(r, text, fontsize=15, fontfile=font_url, fontname="song")
     '''
     r = fitz.Rect(0, 0, bound[2], title_height)
     text = trans.youdaoTranslate(title, 0)
-    new_pdf[0].insert_textbox(r, text, fontsize=title_fontsize, fontfile=font_url, fontname="楷体_GB2312",
+    new_pdf[0].insert_textbox(r, text, fontsize=title_fontsize, fontfile=font_url, fontname="song",
                               align=fitz.TEXT_ALIGN_CENTER)
 
     # place authors
@@ -217,7 +217,7 @@ def trans2pdf(
                     continue
                 text = trans.youdaoTranslate(text, 0)
                 new_pdf[page_num].insert_textbox(r, text, fontsize=content_fontsize, fontfile=font_url,
-                                                 fontname="楷体_GB2312")
+                                                 fontname="song")
         else:
             r = fitz.Rect(*paragraph['paragraph_coor'][1:])
             page_num = int(paragraph['paragraph_coor'][0]) - 1
@@ -226,7 +226,7 @@ def trans2pdf(
                 continue
             text = trans.youdaoTranslate(text, 0)
             new_pdf[page_num].insert_textbox(r, text, fontsize=content_fontsize, fontfile=font_url,
-                                             fontname="楷体_GB2312")
+                                             fontname="song")
 
     # translate figure captions
     print("Translating the figure captions......")
@@ -241,9 +241,9 @@ def trans2pdf(
         if len(text) < 2:  # avoid simply \n which can raise error
             continue
         text = trans.youdaoTranslate(text, 0)
-        new_pdf[page_num].insert_textbox(r, text, fontsize=content_fontsize, fontfile=font_url, fontname="楷体_GB2312")
+        new_pdf[page_num].insert_textbox(r, text, fontsize=content_fontsize, fontfile=font_url, fontname="song")
 
-    sections = func.parse_sections(article, parse_sentence=parse_sentence, MAX_DIFF=0.35*(bound[3]-bound[1]))
+    sections = func.parse_sections(article, parse_sentence=parse_sentence, MAX_DIFF=0.2*(bound[3]-bound[1]))
 
     # translate section titles
     print("translating section titles")
@@ -265,8 +265,8 @@ def trans2pdf(
             continue
         text = trans.youdaoTranslate(text, 0)
         new_pdf[page_num].insert_textbox(r, text, fontsize=section_head_fontsize, fontfile=font_url,
-                                         fontname="楷体_GB2312")
-        # new_pdf[page_num].insert_text(p, text, fontsize=9, fontfile=font_url, fontname="楷体_GB2312")
+                                         fontname="song")
+        # new_pdf[page_num].insert_text(p, text, fontsize=9, fontfile=font_url, fontname="song")
         # shape.commit()
 
     # translate section contents
@@ -290,11 +290,13 @@ def trans2pdf(
                         continue
                     text = trans.youdaoTranslate(text, 0)
                     new_pdf[page_num].insert_textbox(r, text, fontsize=content_fontsize, fontfile=font_url,
-                                                     fontname="楷体_GB2312")
+                                                     fontname="song")
                     # print("____dubug____:" + text)
-                    # new_pdf[page_num].insert_text(p, text, fontsize=7, fontfile=font_url, fontname="楷体_GB2312")
+                    # new_pdf[page_num].insert_text(p, text, fontsize=7, fontfile=font_url, fontname="song")
                     # shape.commit()
             else:
+                print("__________debug:     " )
+                print(paragraph)
                 r = fitz.Rect(*paragraph['paragraph_coor'][1:])
                 page_num = int(paragraph['paragraph_coor'][0]) - 1
                 bound = new_pdf[page_num].bound()
@@ -304,7 +306,7 @@ def trans2pdf(
                     continue
                 text = trans.youdaoTranslate(text, 0)
                 new_pdf[page_num].insert_textbox(r, text, fontsize=content_fontsize, fontfile=font_url,
-                                                 fontname="楷体_GB2312")
+                                                 fontname="song")
 
     pdf_name = os.path.splitext(os.path.basename(pdf_path))[0]
     new_pdf.save(os.path.join(root_path, pdf_name, "translated_" + pdf_name + ".pdf"))
