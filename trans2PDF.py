@@ -5,6 +5,7 @@ import parse_func as func
 import translate_func as trans
 import os
 import json
+import argparse
 
 # working path
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -154,6 +155,7 @@ def pdf_regenerator(
 
 def trans2pdf(
         pdf_path: str,
+        out_path: str = None,
         root_path: str = os.path.join(DIR_PATH, "resources", "out"),
         font_url: str = os.path.join(DIR_PATH, "resources", "song", "song.ttf"),
         title_fontsize: int = 23,
@@ -309,4 +311,21 @@ def trans2pdf(
                                                  fontname="song")
 
     pdf_name = os.path.splitext(os.path.basename(pdf_path))[0]
-    new_pdf.save(os.path.join(root_path, pdf_name, "translated_" + pdf_name + ".pdf"))
+    if out_path is None:
+        new_pdf.save(os.path.join(root_path, pdf_name, "translated_" + pdf_name + ".pdf"))
+    else:
+        if os.path.isfile(save_path):
+            raise RuntimeError('the save path should be a dir')
+        if not os.path.exists(save_path):
+            os.mkdir(save_path)
+        new_pdf.save(os.path.join(out_path, "translated_" + pdf_name + ".pdf"))
+
+
+if '__name__' == '__main__':
+    parser = argparse.ArgumentParser(description='input and output path')
+    parser.add_argument('--in_path', type=str, help='pdf file path. should be ended with .pdf')
+    parser.add_argument('--out_path', type=int, help='path where to store translated file.')
+    args = parser.parse_args()
+    trans2pdf(args.in_path, args.out_path)
+
+
